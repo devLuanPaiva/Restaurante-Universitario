@@ -1,0 +1,22 @@
+main{
+    min-height: 87.3vh;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+.opcoes{
+    background-color: #FFF8F2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    min-height: 50vh;
+    min-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.opcoes > div{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}

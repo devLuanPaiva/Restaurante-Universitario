@@ -1,0 +1,11 @@
+header{
+    color: white;
+    background-color: #F25C05;
+    min-width: 15vw;
+    border-end-end-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 0.9em;
+    padding: 8px;
+    display: inline-block;
+    box-sizing: border-box;
+}

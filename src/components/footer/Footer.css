@@ -1,0 +1,36 @@
+footer{
+    background-color: #F25C05;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 80px;
+    color: white;
+}
+.logoFooter{
+    display: flex;
+    align-items: center;
+}
+.logoFooter img{
+    width: 180px;
+    height: 30px;
+}
+.linha{
+    color: white;
+    height: 40px;
+    width: 5px;
+    border-radius: 5px;
+}
+hr{
+    height:40px;
+    width: 5px;
+    border-radius: 8px;
+    margin-right: 5px;
+    color:#fff;
+    background-color: #fff;
+   }
+.ufersa{
+    display: block;
+}
+.ufersa h3, .ufersa h4{
+    margin-left: 6px;
+}   

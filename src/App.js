@@ -1,11 +1,25 @@
 import './App.css';
-import FormCardapio from './components/funcionario/formCardapio/FormCardapio';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ProtectedRoute from './ProtectedRoute.jsx';
+import Home from './components/alunos/home/Home';
+
+
+
 
 function App() {
+ 
   return (
-    <div className="App">
-      <FormCardapio/>
-    </div>
+
+      <Router>
+        <Routes>
+          
+          <Route path="/" element={<ProtectedRoute />}>
+            <Route path='HomeAluno' element={<Home />} />
+            
+          </Route>
+        </Routes>
+      </Router>
+
   );
 }
 

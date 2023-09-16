@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FormJanta from './FormJanta';
+import './FormCardapio.css'
 
 const FormCardapio = () => {
   const [cardapio, setCardapio] = useState({
@@ -64,7 +65,9 @@ const FormCardapio = () => {
       },
     }));
   };
-
+  const submitMenu = () => {
+    console.log(cardapio)
+  }
   return (
     <main>
         <section>
@@ -140,6 +143,9 @@ const FormCardapio = () => {
           ))}
         </section>
         <FormJanta/>
+        <div>
+          <button onClick={submitMenu}>Cadastrar</button>
+        </div>
     </main>
   );
 };
