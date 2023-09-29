@@ -1,6 +1,93 @@
-#formulario{
+#formulario {
     margin: 0 auto;
-    background-color: rgba(249, 190, 190, 0.799);
-    height: 40vh;
-    width: 20vw;
+    background-color: #FFF8F2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    display: flex;
+    width: 400px;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+#formulario form {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+
+#formulario h2 {
+    color: rgb(0, 0, 0);
+}
+
+.submit {
+    background-color: #AF0000;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px 7px;
+    height: 50px;
+    width: 95%;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #AF0000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+.submit:hover {
+    cursor: pointer;
+ 
+    background-color: #af0000a9;
+    border: 1px solid #af0000a9;
+}
+
+
+.erro {
+    color: white;
+}
+
+.user-box{
+    position: relative;
+}
+.user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.3em;
+    color: #AF0000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #AF0000;
+    outline: none;
+    background-color: transparent;
+}
+.user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1.4em;
+    color: #AF0000;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.user-box input:focus ~ label, .user-box input:valid ~ label{
+    top: -30px;
+    left: 0;
+    color: #af0000a9;
+    font-size: 1.2em;
+}
+.descricao{
+    color: #333;
+}
+#cadastrar{
+    text-decoration: none;
+    color: #af0000a9;
+    font-weight: bold;
 }

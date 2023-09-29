@@ -60,18 +60,20 @@ const Login = () => {
                 <div id="formulario">
                     <h2>Login</h2>
                     <form onSubmit={handleSubmit} >
-                        <div className='inputLogin'>
-                            <input type="text" value={username} onChange={e => setUsername(e.target.value)} className="infoLogin" placeholder='Usuário' />
-
+                        <div className='user-box'>
+                            <input type="text" value={username} onChange={e => setUsername(e.target.value)} className="infoLogin"  />
+                            <label >Usuário</label>
                         </div>
-                        <div className='inputLogin'>
-                            <input type="password" value={password} onChange={e => setPassword(e.target.value)} className="infoLogin" placeholder='Senha' />
-
+                        <div className='user-box'>
+                            <input type="password" value={password} onChange={e => setPassword(e.target.value)} className="infoLogin"  />
+                            <label>Senha</label>
                         </div>
                         <input type="submit" value="ENTRAR" className="submit" />
+
                         <div>
-                            <p>Ainda não tem cadastro? <Link to={'/cadastro'}>Cadastrar-se</Link> </p>
+                            <p className='descricao'>Ainda não tem cadastro? <Link to={'/cadastro'} id='cadastrar'>Cadastrar-se</Link> </p>
                         </div>
+
                     </form>
                     {erro && <div className="erro">{erro}</div>}
                 </div>
