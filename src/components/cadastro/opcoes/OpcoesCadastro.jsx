@@ -2,20 +2,20 @@ import React from 'react'
 import Header from '../../header/Header'
 import Footer from '../../footer/Footer'
 import { Link } from 'react-router-dom'
+import '../CadastroUsuarios.css'
 
 const OpcoesCadastro = () => {
     return (
         <React.Fragment>
             <Header />
-            <main>
+            <main className='mainOpcoesDuplas'> 
                 <h1>Como deseja se cadastrar?</h1>
                 <section className="opcoesDuplas">
-                    <button className='botaoOpcoes'>
-                        <Link to={'/cadFuncionario'}>Funcionário</Link>
-                    </button>
-                    <button className='botaoOpcoes'>
-                        <Link to={'/cadAluno'}>Aluno</Link>
-                    </button>
+                    
+                        <Link className='buttons' to={'/cadFuncionario'}>Funcionário</Link>
+                    
+                        <Link className='buttons' to={'/cadAluno'}>Aluno</Link>
+                   
                 </section>
             </main>
             <Footer />

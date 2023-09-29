@@ -1,6 +1,7 @@
 header{
     color: white;
-    background-color: #F25C05;
+    /* background-color: #F25C05; */
+    background-color: #AF0000;
     min-width: 15vw;
     border-end-end-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);

@@ -7,20 +7,28 @@ import Footer from '../../footer/Footer'
 const HomeFuncionario = () => {
     return (
         <React.Fragment>
-            <Header/>
+            <Header />
             <main>
                 <section className='opcoes'>
                     <div>
-                        <Link to={'/HomeFuncionario/CadastrarCardapio'} className="buttonHome">Cadastrar Cardápio</Link>
-                        <Link className="buttonHome">Editar Cardápio</Link>
+                        <Link to={'/HomeFuncionario/CadastrarCardapio'} className="buttons">
+                            Cadastrar Cardápio
+                        </Link>
+                        <Link to={'/HomeFuncionario/EditarCardapio'} className="buttons">
+                            Editar Cardápio
+                        </Link>
                     </div>
                     <div>
-                        <Link className="buttonHome">Visualizar Sugestões</Link>
-                        <Link className="buttonHome">Visualizar Feedbacks</Link>
+                        <Link to={'/HomeFuncionario/VisualizarSugestoes'} className="buttons">
+                            Visualizar Sugestões
+                        </Link>
+                        <Link to={'/HomeFuncionario/VisualizarFeedbacks'} className="buttons">
+                            Visualizar Feedbacks
+                        </Link>
                     </div>
                 </section>
             </main>
-            <Footer/>
+            <Footer />
         </React.Fragment>
     )
 }

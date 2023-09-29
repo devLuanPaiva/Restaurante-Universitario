@@ -9,6 +9,7 @@ import CadFuncionario from './components/cadastro/cadFuncionario/CadFuncionario'
 import FormCardapio from './components/funcionario/formCardapio/FormCardapio';
 import FormAlmoco from './components/funcionario/formCardapio/FormAlmoco';
 import FormJanta from './components/funcionario/formCardapio/FormJanta';
+import AvaliarComida from './components/alunos/avaliacoes/AvaliarComida';
 
 
 
@@ -24,8 +25,9 @@ function App() {
         <Route path='/cadAluno' element={<CadAluno />} />
         <Route path='/cadFuncionario' element={<CadFuncionario />} />
         <Route path='/HomeAluno' element={<Home />} />
-        <Route path='/HomeFuncionario' element={<HomeFuncionario />} />
+        <Route path='/HomeAluno/Avaliar' element={<AvaliarComida />} />
 
+        <Route path='/HomeFuncionario' element={<HomeFuncionario />} />
         <Route path='/HomeFuncionario/CadastrarCardapio' element={<FormCardapio/>} />
         <Route path='/HomeFuncionario/CadastrarCardapio/Almoco' element={<FormAlmoco/>} />
         <Route path='/HomeFuncionario/CadastrarCardapio/Janta' element={<FormJanta/>} />

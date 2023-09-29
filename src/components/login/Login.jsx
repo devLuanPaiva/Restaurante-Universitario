@@ -37,10 +37,10 @@ const Login = () => {
                 localStorage.setItem('token', token);
 
                 // Redirecionar para a página Home
-                if(jsonResponse.identificador === true){
+                if (jsonResponse.identificador === true) {
                     navigate("/HomeAluno");
 
-                }else{
+                } else {
                     navigate("HomeFuncionario")
                 }
             } else {
@@ -52,31 +52,30 @@ const Login = () => {
             console.error(error);
         }
     }
-    
+
     return (
         <React.Fragment>
             <Header link={'/'} />
             <main id="login">
-                <div id="filtro">
-                    <div id="formulario">
-                        <h2>Login</h2>
-                        <form onSubmit={handleSubmit} >
-                            <div className='inputLogin'>
-                                <input type="text" value={username} onChange={e => setUsername(e.target.value)} className="infoLogin" placeholder='Usuário' />
+                <div id="formulario">
+                    <h2>Login</h2>
+                    <form onSubmit={handleSubmit} >
+                        <div className='inputLogin'>
+                            <input type="text" value={username} onChange={e => setUsername(e.target.value)} className="infoLogin" placeholder='Usuário' />
 
-                            </div>
-                            <div className='inputLogin'>
-                                <input type="password" value={password} onChange={e => setPassword(e.target.value)} className="infoLogin" placeholder='Senha' />
+                        </div>
+                        <div className='inputLogin'>
+                            <input type="password" value={password} onChange={e => setPassword(e.target.value)} className="infoLogin" placeholder='Senha' />
 
-                            </div>
-                            <input type="submit" value="ENTRAR" className="submit" />
-                            <div>
-                                <p>Ainda não tem cadastro? <Link to={'/cadastro'}>Cadastrar-se</Link> </p>
-                            </div>
-                        </form>
-                        {erro && <div className="erro">{erro}</div>}
-                    </div>
+                        </div>
+                        <input type="submit" value="ENTRAR" className="submit" />
+                        <div>
+                            <p>Ainda não tem cadastro? <Link to={'/cadastro'}>Cadastrar-se</Link> </p>
+                        </div>
+                    </form>
+                    {erro && <div className="erro">{erro}</div>}
                 </div>
+
             </main>
             <Footer />
         </React.Fragment>
