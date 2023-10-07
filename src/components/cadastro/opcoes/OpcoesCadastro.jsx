@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../../header/Header'
 import Footer from '../../footer/Footer'
 import { Link } from 'react-router-dom'
-import '../CadastroUsuarios.css'
+import './OpcoesCadastro.css'
 
 const OpcoesCadastro = () => {
     return (

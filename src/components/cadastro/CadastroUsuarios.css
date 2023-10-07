@@ -1,20 +1,59 @@
-.mainOpcoesDuplas{
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px 400px;
-    grid-template-areas: 
-    'title title'
-    'options options'
-    ;
+.cadastroUsuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 9px;
+    border: 1px solid #ffffff;
+    background-color: #fff;
+    padding: 10px;
+    height: 70vh;
+    width: 40vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
 
+.cadastroUsuario form{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 90%;
+    justify-content: space-around;
+    box-sizing: border-box;
 }
-.mainOpcoesDuplas >h1{
-    grid-area: title;
-    margin-left: 100px;
+.cadastroUsuario input{
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #AF0000;
+   
 }
-.mainOpcoesDuplas > .opcoesDuplas{
-    grid-area: options;
-    width: 60%;
-    margin: 0 auto;
+.opcoesFinais{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+.opcoesFinais > button{
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+}
+#cad{
+    border: 1px solid #000;
+    background-color: #000;
+}
+#cancel{
+    border: 1px solid #ff0000;
+    background-color: #c20202;
+    margin-right: 10px;
+}
+#cad:hover{
+    background-color: #000000e1;
+}
+#cancel:hover{
+    background-color: #ff0000d1;
 }

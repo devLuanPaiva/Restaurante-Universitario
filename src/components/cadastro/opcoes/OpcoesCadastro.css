@@ -1,0 +1,20 @@
+.mainOpcoesDuplas{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px 400px;
+    grid-template-areas: 
+    'title title'
+    'options options'
+    ;
+
+}
+.mainOpcoesDuplas >h1{
+    grid-area: title;
+    margin-left: 100px;
+}
+.mainOpcoesDuplas > .opcoesDuplas{
+    grid-area: options;
+    width: 60%;
+    margin: 0 auto;
+}

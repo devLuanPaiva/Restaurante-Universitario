@@ -9,14 +9,14 @@ const FormCardapio = () => {
   return (
     <React.Fragment>
       <Header />
-      <main>
+      <main className='mainOpcoesDuplas'>
         <h1>O que deseja cadastrar?</h1>
-        
-          <section className="opcoesDuplas">
-            <Link to={'/HomeFuncionario/CadastrarCardapio/Almoco'}>Almoço</Link>
-            <Link to={'/HomeFuncionario/CadastrarCardapio/Janta'}>Janta</Link>
-          </section>
-        
+
+        <section className="opcoesDuplas">
+          <Link className='buttons' to={'/HomeFuncionario/CadastrarCardapio/Almoco'}>Almoço</Link>
+          <Link className='buttons' to={'/HomeFuncionario/CadastrarCardapio/Janta'}>Janta</Link>
+        </section>
+
       </main>
       <Footer />
     </React.Fragment>
