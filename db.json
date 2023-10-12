@@ -1,0 +1,170 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "matricula": "2020022483",
+      "name_user": "Luan Alves",
+      "email": "luanalves@alunos.ufersa.edu.br",
+      "password": "Luan123",
+      "aluno": true
+    },
+    {
+      "id": 2,
+      "matricula": "20210134",
+      "name_user": "Lucas",
+      "email": "lucasanderson@ufersa.edu.br",
+      "password": "Lucas432",
+      "aluno": false
+    },
+    {
+      "matricula": "2020022484",
+      "name_user": "Leonidas",
+      "email": "leonidas@alunos.ufersa.edu.br",
+      "password": "Leonidas123",
+      "aluno": true,
+      "id": 3
+    },
+    {
+      "matricula": "20230148",
+      "name_user": "Clara ",
+      "email": "clara@ufersa.edu.br",
+      "password": "clara1234",
+      "aluno": false,
+      "id": 4
+    },
+    {
+      "matricula": "12345",
+      "name_user": "emson",
+      "email": "emson@alunos.ufersa.edu.br",
+      "password": "emson123",
+      "aluno": false,
+      "id": 5
+    }
+  ],
+  "cardapio_almoco": [
+    
+    {
+      "id": 2,
+      "prato_base": "Macarrão",
+      "acompanhamento": "Vinagrete",
+      "proteina_1": "carne moida",
+      "proteina_2": "passoca",
+      "opcao_vegetariana": "carne de soja",
+      "salada": "legumnosa",
+      "suco": "caju",
+      "sobremesa": "banana"
+    },
+    {
+      "id": 3,
+      "prato_base": "",
+      "acompanhamento": "",
+      "proteina_1": "",
+      "proteina_2": "",
+      "opcao_vegetariana": "",
+      "salada": "Frutas",
+      "suco": "",
+      "sobremesa": ""
+    },
+    {
+      "id": 4,
+      "prato_base": "",
+      "acompanhamento": "",
+      "proteina_1": "",
+      "proteina_2": "",
+      "opcao_vegetariana": "",
+      "salada": "Alface com Tomate",
+      "suco": "",
+      "sobremesa": ""
+    },
+    {
+      "id": 5,
+      "prato_base": "",
+      "acompanhamento": "",
+      "proteina_1": "",
+      "proteina_2": "",
+      "opcao_vegetariana": "",
+      "salada": "Cebolas",
+      "suco": "",
+      "sobremesa": ""
+    },
+    {
+      "id": 6,
+      "prato_base": "",
+      "acompanhamento": "",
+      "proteina_1": "",
+      "proteina_2": "",
+      "opcao_vegetariana": "",
+      "salada": "Vinagrete",
+      "suco": "",
+      "sobremesa": ""
+    },
+    {
+      "id": 7,
+      "prato_base": "",
+      "acompanhamento": "",
+      "proteina_1": "",
+      "proteina_2": "",
+      "opcao_vegetariana": "",
+      "salada": "legumes",
+      "suco": "",
+      "sobremesa": ""
+    }
+  ],
+  "cardapio_jantar": [
+    {
+      "id": 2,
+      "prato_base": "Arroz",
+      "acompanhamento1": "Feijão Carioca",
+      "acompanhamento2": "Farofa de Cuscuz",
+      "proteina_1": "Frango",
+      "opcao_vegetariana": "Carne de Soja",
+      "salada": "Leguminosas",
+      "suco": "Abacaxi",
+      "sobremesa": "Pão"
+    },
+    {
+      "id": 3,
+      "prato_base": "Macarronada",
+      "acompanhamento1": "",
+      "acompanhamento2": "",
+      "proteina_1": "",
+      "opcao_vegetariana": "",
+      "salada": "",
+      "suco": "",
+      "sobremesa": ""
+    },
+    {
+      "id": 4,
+      "prato_base": "Macarrão ao alho e óleo",
+      "acompanhamento1": "",
+      "acompanhamento2": "",
+      "proteina_1": "",
+      "opcao_vegetariana": "",
+      "salada": "",
+      "suco": "",
+      "sobremesa": ""
+    },
+    {
+      "id": 5,
+      "prato_base": "Cuscuz temperado",
+      "acompanhamento1": "",
+      "acompanhamento2": "",
+      "proteina_1": "",
+      "opcao_vegetariana": "",
+      "salada": "",
+      "suco": "",
+      "sobremesa": ""
+    },
+    {
+      "id": 6,
+      "prato_base": "Arroz temperado",
+      "acompanhamento1": "",
+      "acompanhamento2": "",
+      "proteina_1": "",
+      "opcao_vegetariana": "",
+      "salada": "",
+      "suco": "",
+      "sobremesa": ""
+    }
+  ]
+}

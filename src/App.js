@@ -15,6 +15,7 @@ import EscolhaDiaJanta from './components/funcionario/formCardapio/EscolhaDiaJan
 import OpcoesEdicao from './components/funcionario/edicao/OpcoesEdicao';
 import EscolhaDiaAlmoco from './components/funcionario/edicao/EscolhaDiaAlmoco';
 import EditarAlmoco from './components/funcionario/edicao/EditarAlmoco';
+import ViewCardapio from './components/alunos/visualizacoes/cardapio/ViewCardapio';
 
 
 
@@ -30,6 +31,8 @@ function App() {
         <Route path='/cadAluno' element={<CadAluno />} />
         <Route path='/HomeAluno' element={<Home />} />
         <Route path='/HomeAluno/Avaliar' element={<AvaliarComida />} />
+        <Route path='/Homealuno/VisualizarCardapio' element={<ViewCardapio/>} />
+
 
         <Route path='/cadFuncionario' element={<CadFuncionario />} />
         <Route path='/HomeFuncionario' element={<HomeFuncionario />} />
