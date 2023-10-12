@@ -8,7 +8,7 @@ const Header = (props) => {
         <React.Fragment>
             <header>
                 <div className="logo" >
-                    <Link to={'/'}><img src={logo} alt="logo" /></Link>
+                    <Link to={props.link}><img src={logo} alt="logo" /></Link>
                 </div>
                 <div className="titulo">
                     <h1>{props.titulo}</h1>

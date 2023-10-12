@@ -11,6 +11,10 @@ import FormAlmoco from './components/funcionario/formCardapio/FormAlmoco';
 import FormJanta from './components/funcionario/formCardapio/FormJanta';
 import AvaliarComida from './components/alunos/avaliacoes/AvaliarComida';
 import EscolhaDia from './components/funcionario/formCardapio/EscolhaDia';
+import EscolhaDiaJanta from './components/funcionario/formCardapio/EscolhaDiaJanta';
+import OpcoesEdicao from './components/funcionario/edicao/OpcoesEdicao';
+import EscolhaDiaAlmoco from './components/funcionario/edicao/EscolhaDiaAlmoco';
+import EditarAlmoco from './components/funcionario/edicao/EditarAlmoco';
 
 
 
@@ -34,7 +38,14 @@ function App() {
         <Route path='/HomeFuncionario/CadastrarCardapio/Almoco/' element={<EscolhaDia/>} />
         <Route path='/HomeFuncionario/CadastrarCardapio/Almoco/:dia' element={<FormAlmoco/>} />
 
-        <Route path='/HomeFuncionario/CadastrarCardapio/Janta/:dia' element={<FormJanta/>} />
+        <Route path='/HomeFuncionario/CadastrarCardapio/Jantar/' element={<EscolhaDiaJanta/>} />
+        <Route path='/HomeFuncionario/CadastrarCardapio/Jantar/:dia' element={<FormJanta/>} />
+
+        <Route  path='/HomeFuncionario/EditarCardapio' element={<OpcoesEdicao/>} />
+        <Route  path='/HomeFuncionario/EditarCardapio/Almoco' element={<EscolhaDiaAlmoco/>} />
+        <Route  path='/HomeFuncionario/EditarCardapio/Almoco/:dia' element={<EditarAlmoco/>} />
+        <Route  path='/HomeFuncionario/EditarCardapio/Jantar' element={<EscolhaDiaJanta/>} />
+        <Route  path='/HomeFuncionario/EditarCardapio/Jantar/:dia' element={<EscolhaDiaJanta/>} />
 
       </Routes>
     </Router>

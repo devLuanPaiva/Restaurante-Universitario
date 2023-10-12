@@ -7,9 +7,9 @@ import axios from 'axios';
 
 const FormJanta = () => {
   const [pratoBase, setPratoBase] = useState('')
-  const [acompanhamento, setAcompanhamento] = useState('')
+  const [acompanhamento1, setAcompanhamento1] = useState('')
+  const [acompanhamento2, setAcompanhamento2] = useState('')
   const [proteina1, setProteina1] = useState('')
-  const [proteina2, setProteina2] = useState('')
   const [vegeitariana, setVegeitariana] = useState('')
   const [salada, setSalada] = useState('')
   const [sobremesa, setSobremesa] = useState('')
@@ -19,21 +19,21 @@ const FormJanta = () => {
   const submitMenu = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.patch(`http://localhost:5000/cardapio_almoco/${dia}`, {
+      const response = await axios.patch(`http://localhost:5000/cardapio_jantar/${dia}`, {
         prato_base: pratoBase,
-        acompanhamento: acompanhamento,
+        acompanhamento1: acompanhamento1,
         proteina_1: proteina1,
-        proteina_2: proteina2,
+        acompanhamento2: acompanhamento2,
         opcao_vegetariana: vegeitariana,
         salada: salada,
         suco: suco,
         sobremesa: sobremesa
       })
       if (response.status === 200) {
-        setAcompanhamento('')
+        setAcompanhamento1('')
         setPratoBase('')
         setProteina1('')
-        setProteina2('')
+        setAcompanhamento2('')
         setSalada('')
         setSobremesa('')
         setVegeitariana('')
@@ -46,9 +46,9 @@ const FormJanta = () => {
   }
   return (
     <React.Fragment>
-      <Header titulo={"Cardápio do Jantar"}/>
+      <Header titulo={"Cardápio do Jantar"} link={'/homeFuncionario'}/>
       <main className='mainFormCardapio'>
-      <section className='formCardapio'>
+        <section className='formCardapio'>
           <form>
             <input
               placeholder='Prato Base'
@@ -57,22 +57,22 @@ const FormJanta = () => {
               onChange={e => setPratoBase(e.target.value)}
             />
             <input
-              placeholder='Acompanhamento'
+              placeholder='Acompanhamento 1'
               type="text"
-              value={acompanhamento}
-              onChange={e => setAcompanhamento(e.target.value)}
+              value={acompanhamento1}
+              onChange={e => setAcompanhamento1(e.target.value)}
+            />
+            <input
+              placeholder='Acompanhamento 2'
+              type="text"
+              value={acompanhamento2}
+              onChange={e => setAcompanhamento2(e.target.value)}
             />
             <input
               placeholder='Protetina 1'
               type="text"
               value={proteina1}
               onChange={e => setProteina1(e.target.value)}
-            />
-            <input
-              placeholder='Proteina 2'
-              type="text"
-              value={proteina2}
-              onChange={e => setProteina2(e.target.value)}
             />
             <input
               placeholder='Opção Vegetariana'
@@ -101,11 +101,11 @@ const FormJanta = () => {
           </form>
 
           <div className='opcoesFinais'>
-          <button id='cancel'>Cancelar</button>
-            <button id='cad'  onClick={submitMenu}>Cadastrar</button>
+            <button id='cancel'>Cancelar</button>
+            <button id='cad' onClick={submitMenu}>Cadastrar</button>
           </div>
         </section>
-        
+
       </main>
       <Footer />
     </React.Fragment>

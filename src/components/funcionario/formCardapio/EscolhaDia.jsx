@@ -7,7 +7,7 @@ import './FormCardapio.css'
 const EscolhaDia = () => {
     return (
         <React.Fragment>
-            <Header/>
+            <Header link={'/homeFuncionario'}/>
             <main className='escolhasDias'>
                 <h1>Escolha o dia da semana</h1>
                 <section className='opcoesDuplas'>

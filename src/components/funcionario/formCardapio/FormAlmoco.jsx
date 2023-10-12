@@ -16,6 +16,7 @@ const FormAlmoco = () => {
   const [suco, setSuco] = useState('')
   const { dia } = useParams()
 
+ 
   const submitMenu = async (e) => {
     e.preventDefault()
     try {
@@ -46,7 +47,7 @@ const FormAlmoco = () => {
   }
   return (
     <React.Fragment>
-      <Header titulo={"Cardápio do Almoço"} />
+      <Header titulo={"Cardápio do Almoço"} link={'/homeFuncionario'} />
       <main className='mainFormCardapio'>
         <section className='formCardapio'>
           <form>
