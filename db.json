@@ -42,7 +42,6 @@
     }
   ],
   "cardapio_almoco": [
-    
     {
       "id": 2,
       "prato_base": "Macarrão",
@@ -165,6 +164,15 @@
       "salada": "",
       "suco": "",
       "sobremesa": ""
+    }
+  ],
+  "avaliacoes": [
+    {
+      "estrelas": 4,
+      "comentario": "dkq;lfkqlfjqekl;jfqkljfqekljflkqejf",
+      "tipo": "1",
+      "dia": "2",
+      "id": 1
     }
   ]
 }

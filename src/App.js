@@ -16,6 +16,9 @@ import OpcoesEdicao from './components/funcionario/edicao/OpcoesEdicao';
 import EscolhaDiaAlmoco from './components/funcionario/edicao/EscolhaDiaAlmoco';
 import EditarAlmoco from './components/funcionario/edicao/EditarAlmoco';
 import ViewCardapio from './components/alunos/visualizacoes/cardapio/ViewCardapio';
+import AvaliarTipo from './components/alunos/avaliacoes/AvaliarTipo';
+import AvaliarDia from './components/alunos/avaliacoes/AvaliarDia';
+import AvaliarDiaJantar from './components/alunos/avaliacoes/AvaliarDiaJantar';
 
 
 
@@ -30,7 +33,11 @@ function App() {
         <Route path='/cadastro' element ={ <OpcoesCadastro />}/>
         <Route path='/cadAluno' element={<CadAluno />} />
         <Route path='/HomeAluno' element={<Home />} />
-        <Route path='/HomeAluno/Avaliar' element={<AvaliarComida />} />
+        <Route path='/Homealuno/RealizarFeedback' element={<AvaliarTipo />} />
+        <Route path='/Homealuno/RealizarFeedback/Almoco' element={<AvaliarDia />} />
+        <Route path='/Homealuno/RealizarFeedback/Jantar' element={<AvaliarDiaJantar />} />
+        <Route path='/Homealuno/RealizarFeedback/Almoco/:tipo/:dia' element={<AvaliarComida/>} />
+        <Route path='/Homealuno/RealizarFeedback/Jantar/:tipo/:dia' element={<AvaliarComida/>} />
         <Route path='/Homealuno/VisualizarCardapio' element={<ViewCardapio/>} />
 
 

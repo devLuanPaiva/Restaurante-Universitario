@@ -14,7 +14,7 @@ const FormCardapio = () => {
 
         <section className="opcoesDuplas">
           <Link className='buttons' to={'/HomeFuncionario/CadastrarCardapio/Almoco'}>Almoço</Link>
-          <Link className='buttons' to={'/HomeFuncionario/CadastrarCardapio/Jantar'}>Janta</Link>
+          <Link className='buttons' to={'/HomeFuncionario/CadastrarCardapio/Jantar'}>Jantar</Link>
         </section>
 
       </main>
