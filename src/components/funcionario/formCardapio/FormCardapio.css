@@ -9,15 +9,28 @@
     ;
 
 }
-.escolhasDias >h1{
-    grid-area: title;
-    margin-left: 100px;
-}
+
+
 .escolhasDias > .opcoesDuplas{
-    grid-area: options;
-    width: 60%;
-    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-around; */
+    justify-content: space-around;
+    align-items: center;
 }
+.opcoesDuplas {
+    display: flex;
+    justify-content: space-around;
+}
+.opcoesDuplasSemana {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    
+    gap: 1rem;
+}
+
 .mainFormCardapio{
     display: flex;
     max-width: 100vw;
@@ -25,6 +38,19 @@
     flex-direction: column;
     box-sizing: border-box;
 }
+.mainOpcoesDuplas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.opcoesDuplasTitulo {
+    color: #000000c2;
+}
+
+
 .formCardapio{
     display: flex;
     flex-direction: column;
@@ -81,4 +107,31 @@
 }
 #cancel:hover{
     background-color: #ff0000d1;
+}
+
+@media screen and (max-width: 375px) {
+    .escolhasDias >h1{
+        display: flex;
+        font-size: 19px;
+        justify-content: space-around;
+    }
+    .escolhasDias > .opcoesDuplas{
+        width: 50%;
+    }
+    .opcoesDuplas {
+        width: 100%;
+    }
+    .opcoesDuplasSemana{
+        display: flex;
+        gap: 2rem;
+        width: 80%;
+        flex-direction: column;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .opcoesDuplasSemanaJanta{
+        
+    }
+    
 }

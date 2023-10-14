@@ -3,6 +3,7 @@ import Header from '../../header/Header'
 import Footer from '../../footer/Footer'
 import '../CadastroUsuarios.css'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 const CadFuncionario = () => {
     const [nome, setNome] = useState()
@@ -43,7 +44,7 @@ const CadFuncionario = () => {
     }
     return (
         <React.Fragment>
-            <Header titulo={"Cadastrar Aluno"}/>
+            <Header titulo={"Cadastrar Funcionário"}/>
             <main>
                 <section className='cadastroUsuario'>
                     <form>
@@ -54,7 +55,7 @@ const CadFuncionario = () => {
                         <input type="password" value={confirmarSenha} onChange={e => setConfirmarSenha(e.target.value)} className='informacoesCadastro' placeholder='Confirmar Senha' />
                     </form>
                     <div className="opcoesFinais">
-                        <button id='cancel'>Cancelar</button>
+                    <Link to={'/login'} id='cancel'>Cancelar</Link>
                         <button id='cad' onClick={handleFuncionario}>Cadastrar</button>
                     </div>
                     <p>{mensagem} </p>

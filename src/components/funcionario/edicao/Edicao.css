@@ -9,9 +9,16 @@
     ;
 
 }
-.escolhasDias >h1{
-    grid-area: title;
-    margin-left: 100px;
+.escolhasDias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.escolhasDias >h1 {
+    font-size: 40px;
+    color: #0000009c;
 }
 .escolhasDias > .opcoesDuplas{
     grid-area: options;

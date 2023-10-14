@@ -33,4 +33,15 @@ hr{
 }
 .ufersa h3, .ufersa h4{
     margin-left: 6px;
-}   
+}  
+
+@media screen and (max-width: 375px) {
+    .ufersa h3,h4 {
+        font-size: 11px;
+    }
+    .logoFooter img {
+        width: 90px;
+        height: 15px;
+    }
+    
+}
