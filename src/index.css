@@ -61,5 +61,9 @@ code {
     display: flex;
     height: 60vh;
   }
-
+  .buttons {
+    font-size: .9rem;
+    padding:  1rem;
+    text-align: center;
+  }
 }

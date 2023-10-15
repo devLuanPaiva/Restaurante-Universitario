@@ -9,9 +9,11 @@ const EscolhaDia = () => {
         <React.Fragment>
             <Header link={'/homeFuncionario'}/>
             <main className='escolhasDias'>
-                <h1>Escolha o dia da semana</h1>
+                <div className="escolhaDiasTitulo">
+                    <h1>Escolha o dia da semana</h1>
+                </div>
                 <section className='opcoesDuplas'>
-                    <div className="opcoesDuplasSemana">
+                    <div className="opcoesDuplasSemana">    
                         <Link  className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${2}`}>Segunda</Link>
                         <Link  className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${3}`}>Terca</Link>
                         <Link  className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${4}`}>Quarta</Link>

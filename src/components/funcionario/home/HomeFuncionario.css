@@ -4,6 +4,13 @@ main{
     align-items:center ;
     justify-content: center;
 }
+.container-funcionario{
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .opcoes{
     background-color: #FFF8F2;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -14,14 +21,28 @@ main{
     flex-direction: column;
     justify-content: space-around;
 }
-.opcoes > div{
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
+.opcoes-itens{
+    width: 80%;
+    display: grid;
+    /* flex-wrap: nowrap; */
+    flex-direction: column; 
     justify-content: space-around;
+    align-items: center;
+    grid-template-columns: repeat(1, 2fr);
 }
 /* .buttonHome {
     text-align: center;
     text-decoration: none;
     font-size: 1.4em;
 } */
+@media screen and (max-width: 375px) {
+    .opcoes-itens {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+}

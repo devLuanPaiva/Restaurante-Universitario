@@ -76,14 +76,14 @@
   "cardapio_almoco": [
     {
       "id": 2,
-      "prato_base": "Arroz",
-      "acompanhamento": "Vinagrete",
-      "proteina_1": "carne moida",
-      "proteina_2": "passoca",
-      "opcao_vegetariana": "carne de soja",
-      "salada": "legumnosa",
-      "suco": "caju",
-      "sobremesa": "banana"
+      "prato_base": "",
+      "acompanhamento": "",
+      "proteina_1": "",
+      "proteina_2": "",
+      "opcao_vegetariana": "",
+      "salada": "",
+      "suco": "",
+      "sobremesa": ""
     },
     {
       "id": 3,
@@ -205,6 +205,13 @@
       "tipo": "1",
       "dia": "2",
       "id": 1
+    },
+    {
+      "estrelas": 5,
+      "comentario": "",
+      "tipo": "2",
+      "dia": "5",
+      "id": 2
     }
   ]
 }

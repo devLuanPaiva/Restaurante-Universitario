@@ -16,14 +16,9 @@
     align-items: center;
     padding-bottom: 2rem;
 }
-.escolhasDias >h1 {
-    font-size: 40px;
-    color: #0000009c;
-}
-.escolhasDias > .opcoesDuplas{
-    grid-area: options;
-    width: 60%;
-    margin: 0 auto;
+
+.opcoesDuplas{
+   width: 80%;
 }
 .mainFormCardapio{
     display: flex;
@@ -31,21 +26,9 @@
     min-height: 100vh;
     flex-direction: column;
     box-sizing: border-box;
+    gap: 2rem;
 }
-.formCardapio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 9px;
-    border: 1px solid #ffffff;
-    background-color: #fff;
-    padding: 10px;
-    height: 70vh;
-    width: 40vw;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    box-sizing: border-box;
-}
+
 .formCardapio form{
     display: flex;
     flex-direction: column;

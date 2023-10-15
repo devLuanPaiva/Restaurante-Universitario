@@ -1,137 +1,161 @@
-.escolhasDias{
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px 400px;
-    grid-template-areas: 
-    'title title'
-    'options options'
-    ;
-
+.escolhasDias {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 80px 400px;
+  grid-template-areas:
+    "title title"
+    "options options";
 }
 
-
-.escolhasDias > .opcoesDuplas{
-    
-    display: flex;
-    flex-direction: column;
-    /* align-content: space-around; */
-    justify-content: space-around;
-    align-items: center;
-}
 .opcoesDuplas {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 .opcoesDuplasSemana {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 90%;
-    
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  gap: 1rem;
 }
 
-.mainFormCardapio{
-    display: flex;
-    max-width: 100vw;
-    min-height: 100vh;
-    flex-direction: column;
-    box-sizing: border-box;
+.mainFormCardapio {
+  display: flex;
+  max-width: 100vw;
+  min-height: 100vh;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .mainOpcoesDuplas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 .opcoesDuplasTitulo {
-    color: #000000c2;
+  color: #000000c2;
 }
 
-
-.formCardapio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 9px;
-    border: 1px solid #ffffff;
-    background-color: #fff;
-    padding: 10px;
-    height: 70vh;
-    width: 40vw;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    box-sizing: border-box;
+.formCardapio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 9px;
+  border: 1px solid #ffffff;
+  background-color: #fff;
+  padding: 10px;
+  height: 70vh;
+  width: 60%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
 }
-.formCardapio form{
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    width: 90%;
-    justify-content: space-around;
-    box-sizing: border-box;
+.formCardapio form {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 90%;
+  justify-content: space-around;
+  box-sizing: border-box;
 }
-.formCardapio input{
-    height: 40px;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #AF0000;   
+.formCardapio input {
+  height: 40px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #af0000;
 }
-.opcoesFinais{
-    display: flex;
-    justify-content: flex-end;
-    width: 90%;
+.opcoesFinais {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
 }
-.opcoesFinais > button{
-    width: 100px;
-    height: 35px;
-    font-weight: bold;
-    cursor: pointer;
-    color: white;
-    outline: none;
-    border-radius: 5px;
+.opcoesFinais > button {
+  width: 100px;
+  height: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border-radius: 5px;
 }
-#cad{
-    border: 1px solid #000;
-    background-color: #000;
+#cad {
+  border: 1px solid #000;
+  background-color: #000;
 }
-#cancel{
-    border: 1px solid #ff0000;
-    background-color: #c20202;
-    margin-right: 10px;
+#cancel {
+  border: 1px solid #ff0000;
+  background-color: #c20202;
+  margin-right: 10px;
 }
-#cad:hover{
-    background-color: #000000e1;
+#cad:hover {
+  background-color: #000000e1;
 }
-#cancel:hover{
-    background-color: #ff0000d1;
+#cancel:hover {
+  background-color: #ff0000d1;
 }
-
+.escolhasDias > h1 {
+  font-size: 40px;
+  color: #0000009c;
+}
 @media screen and (max-width: 375px) {
-    .escolhasDias >h1{
-        display: flex;
-        font-size: 19px;
-        justify-content: space-around;
-    }
-    .escolhasDias > .opcoesDuplas{
-        width: 50%;
-    }
-    .opcoesDuplas {
-        width: 100%;
-    }
+  .escolhasDias > h1 {
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-around;
+  }
+  .opcoesDuplas {
+    gap: 2rem;
+    width: 80%;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .opcoesDuplasSemanaJanta {
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .escolhaDiasTitulo {
+    font-size: 16px;
+  }
+  .formCardapio {
+    width: 80%;
+  }
+}
+ @media screen and (max-width:500px) {
     .opcoesDuplasSemana{
         display: flex;
-        gap: 2rem;
-        width: 80%;
         flex-direction: column;
-        height: 60vh;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
     }
-    .opcoesDuplasSemanaJanta{
-        
+    .opcoesDuplas {
+        margin: 0;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+ }
+
+@media screen and (max-width: 900px) {
+    
+    .opcoesDuplas {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 2rem;
+       
     }
     
+    .opcoesDuplasSemanaJanta {
+        display: grid;
+        grid-template-columns: repeat(2,3fr);
+        gap: 2rem;
+    }
 }

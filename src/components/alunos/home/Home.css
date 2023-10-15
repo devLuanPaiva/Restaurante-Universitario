@@ -16,7 +16,18 @@ main{
 }
 .opcoes > div{
     width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    display: grid;
+  
+    justify-content: center;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+
+@media screen and (max-width: 375px) {
+    .opcoes > div{
+    
+        padding: 1rem;
+    }
+    
 }

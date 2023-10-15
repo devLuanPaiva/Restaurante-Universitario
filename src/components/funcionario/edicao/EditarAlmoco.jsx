@@ -70,8 +70,9 @@ const EditarAlmoco = () => {
 
   return (
     <React.Fragment>
-    <Header titulo={"Cardápio do Almoço"} link={'/homeFuncionario'} />
+    <Header titulo={""} link={'/homeFuncionario'} />
     <main className='mainFormCardapio'>
+      <h1>Cardápio do Almoço</h1>
       <section className='formCardapio'>
         <form>
           <input
