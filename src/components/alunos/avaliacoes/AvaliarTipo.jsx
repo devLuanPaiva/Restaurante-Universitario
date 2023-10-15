@@ -6,9 +6,8 @@ import { Link } from 'react-router-dom';
 const AvaliarTipo = () => {
     return (
         <React.Fragment>
-            <Header link={'/homeAluno'} />
+            <Header titulo={'O que deseja avaliar?'} link={'/homeAluno'} />
             <main className='mainOpcoesDuplas'>
-                <h1>O que deseja avaliar?</h1>
 
                 <section className="opcoesDuplas">
                     <Link className='buttons' to={'/Homealuno/RealizarFeedback/Almoco'}>Almoço</Link>

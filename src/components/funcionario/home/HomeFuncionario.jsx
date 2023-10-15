@@ -7,10 +7,10 @@ import Footer from '../../footer/Footer'
 const HomeFuncionario = () => {
     return (
         <React.Fragment>
-            <Header />
+            <Header titulo={'Menu do funcionário'} />
             <main>
             <div className="container-funcionario">
-                <h1>Menu do funcionário</h1>
+
                     <section className='opcoes'>
                 
                         <div className='opcoes-itens'>

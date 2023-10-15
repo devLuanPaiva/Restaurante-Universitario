@@ -142,6 +142,10 @@
         align-items: center;
         justify-content: center;
     }
+    .logo{
+        display: none;
+    }
+    
  }
 
 @media screen and (max-width: 900px) {

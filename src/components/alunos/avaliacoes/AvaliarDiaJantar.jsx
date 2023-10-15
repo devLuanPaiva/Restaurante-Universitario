@@ -6,9 +6,9 @@ import './Avaliar.css'
 const AvaliarDiaJantar = () => {
   return (
     <React.Fragment>
-            <Header link={'/homeAluno'} />
+            <Header titulo={'Escolha o dia da senana'} link={'/homeAluno'} />
             <main className='escolhasDias'>
-                <h1>Escolha o dia da semana</h1>
+                
                 <section className='opcoesDuplas'>
                     <Link className='buttons' to={`/Homealuno/RealizarFeedback/Jantar/${2}/${2}`}>Segunda</Link>
                     <Link className='buttons' to={`/Homealuno/RealizarFeedback/Jantar/${2}/${3}`}>Terca</Link>

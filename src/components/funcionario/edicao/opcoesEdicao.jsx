@@ -7,9 +7,8 @@ import './Edicao.css'
 const OpcoesEdicao = () => {
   return (
     <React.Fragment>
-      <Header link={'/homeFuncionario'}/>
+      <Header titulo={'O que deseja editar?'} link={'/homeFuncionario'}/>
       <main className='escolhasDias'>
-        <h1>O que deseja editar?</h1>
         <section className="opcoesDuplas">
             <Link className='buttons' to={'/HomeFuncionario/EditarCardapio/Almoco'}>Almoço</Link>
             <Link className='buttons' to={'/HomeFuncionario/EditarCardapio/Jantar'}>Janta</Link>

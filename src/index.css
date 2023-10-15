@@ -57,10 +57,7 @@ code {
   .opcoesDuplasTitulo {
     font-size: 12px;
   }
-  .opcoesDuplas {
-    display: flex;
-    height: 60vh;
-  }
+
   .buttons {
     font-size: .9rem;
     padding:  1rem;

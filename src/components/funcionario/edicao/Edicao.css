@@ -72,3 +72,9 @@
 #cancel:hover{
     background-color: #ff0000d1;
 }
+
+@media screen and (max-width: 500px) {
+    .escolhasDias{
+        margin-top: 1.5rem;
+    }
+}

@@ -7,9 +7,9 @@ import './Edicao.css'
 const EscolhaDiaAlmoco = () => {
   return (
     <React.Fragment>
-            <Header link={'/homeFuncionario'}/>
+            <Header titulo={'Escolha o dia da semana'} link={'/homeFuncionario'}/>
             <main className='escolhasDias'>
-                <h1>Escolha o dia da semana</h1>
+              
                 <section className='opcoesDuplas'>
                     <Link  className='buttons' to={`/HomeFuncionario/EditarCardapio/Almoco/${2}`}>Segunda</Link>
                     <Link  className='buttons' to={`/HomeFuncionario/EditarCardapio/Almoco/${3}`}>Terca</Link>

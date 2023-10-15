@@ -23,7 +23,9 @@ main{
     gap: 2rem;
     padding: 2rem 4rem;
 }
-
+.tituloAluno {
+    font-size: 3rem;
+}
 @media screen and (max-width: 375px) {
     .opcoes > div{
     

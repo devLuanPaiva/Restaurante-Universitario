@@ -46,9 +46,8 @@ const FormJanta = () => {
   }
   return (
     <React.Fragment>
-      <Header  link={'/homeFuncionario'}/>
+      <Header titulo={'Cardápio  do jantar'}  link={'/homeFuncionario'}/>
       <main className='mainFormCardapio'>
-      <h1>Cardápio do Jantar</h1> 
         <section className='formCardapio'>
           <form>
             <input

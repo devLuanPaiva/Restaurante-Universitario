@@ -42,10 +42,9 @@ const Login = () => {
 
     return (
         <React.Fragment>
-            <Header link={'/'} />
+            <Header titulo = {'Login'} link={'/'} className="header" />
             <main id="login">
                 <div id="formulario">
-                    <h2>Login</h2>
                     <form onSubmit={handleSubmit} >
                         <div className='user-box'>
                             <input type="text" value={email} onChange={e => setEmail(e.target.value)} className="infoLogin" />

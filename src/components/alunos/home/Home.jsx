@@ -7,24 +7,27 @@ import { Link } from 'react-router-dom'
 const Home = () => {
     return (
         <React.Fragment>
-            <Header />
+            <Header titulo = {'Menu do aluno'} />
             <main>
-                <section className='opcoes'>
-                    <div>
-                        <Link to={'/Homealuno/VisualizarCardapio'} className="buttons">
-                            Visualizar Cardápio
-                        </Link>
-                        <Link to={'/Homealuno/VisualizarFeedbacks'} className="buttons">
-                            Visualizar Feedbacks
-                        </Link>
-                    </div>
-                    <div>
-                        <Link to={'/Homealuno/SugerirPrato'} className="buttons">
-                            Sugerir novo prato
-                        </Link>
-                        <Link to={'/Homealuno/RealizarFeedback'} className="buttons">Realizar Feedback</Link>
-                    </div>
-                </section>
+            <div className="container-funcionario">
+                
+                    <section className='opcoes'>
+                        <div>
+                            <Link to={'/Homealuno/VisualizarCardapio'} className="buttons">
+                                Visualizar Cardápio
+                            </Link>
+                            <Link to={'/Homealuno/VisualizarFeedbacks'} className="buttons">
+                                Visualizar Feedbacks
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to={'/Homealuno/SugerirPrato'} className="buttons">
+                                Sugerir novo prato
+                            </Link>
+                            <Link to={'/Homealuno/RealizarFeedback'} className="buttons">Realizar Feedback</Link>
+                        </div>
+                    </section>
+            </div>
             </main>
             <Footer />
         </React.Fragment>

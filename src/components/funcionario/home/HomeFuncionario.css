@@ -35,6 +35,14 @@ main{
     text-decoration: none;
     font-size: 1.4em;
 } */
+
+@media screen and (max-width:500px) {
+    .container-funcionario{
+        padding: 0;
+    }
+    
+}
+
 @media screen and (max-width: 375px) {
     .opcoes-itens {
         display: grid;
