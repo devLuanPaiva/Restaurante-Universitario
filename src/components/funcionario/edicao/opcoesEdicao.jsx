@@ -11,7 +11,7 @@ const OpcoesEdicao = () => {
       <main className='escolhasDias'>
         <section className="opcoesDuplas">
             <Link className='buttons' to={'/HomeFuncionario/EditarCardapio/Almoco'}>Almoço</Link>
-            <Link className='buttons' to={'/HomeFuncionario/EditarCardapio/Jantar'}>Janta</Link>
+            <Link className='buttons' to={'/HomeFuncionario/EditarCardapio/Jantar'}>Jantar</Link>
           </section>
       </main>
     <Footer/>

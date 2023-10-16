@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
     return (
         <React.Fragment>
-            <Header titulo = {'Menu do aluno'} />
+            <Header titulo = {'Menu do aluno'} link={'/login'} />
             <main>
             <div className="container-funcionario">
                 
@@ -16,7 +16,7 @@ const Home = () => {
                             <Link to={'/Homealuno/VisualizarCardapio'} className="buttons">
                                 Visualizar Cardápio
                             </Link>
-                            <Link to={'/Homealuno/VisualizarFeedbacks'} className="buttons">
+                            <Link to={'/Homealuno/VisualizarFeedbacks/Aluno'} className="buttons">
                                 Visualizar Feedbacks
                             </Link>
                         </div>

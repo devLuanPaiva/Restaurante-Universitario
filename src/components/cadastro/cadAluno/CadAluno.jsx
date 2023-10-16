@@ -5,11 +5,11 @@ import '../CadastroUsuarios.css'
 import axios from 'axios'
 
 const CadAluno = () => {
-    const [nome, setNome] = useState()
-    const [matricula, setMatricula] = useState()
-    const [email, setEmail] = useState()
-    const [senha, setSenha] = useState()
-    const [confirmarSenha, setConfirmarSenha] = useState()
+    const [nome, setNome] = useState('')
+    const [matricula, setMatricula] = useState('')
+    const [email, setEmail] = useState('')
+    const [senha, setSenha] = useState('')
+    const [confirmarSenha, setConfirmarSenha] = useState('')
     const [mensagem, setMensagem] = useState('');
 
     const handleAluno = async (e) => {
@@ -17,14 +17,14 @@ const CadAluno = () => {
         if (senha === confirmarSenha) {
 
             try {
-                const response = await axios.put('http://localhost:5000/users', {
+                const response = await axios.post('http://localhost:5000/users', {
                     matricula: matricula,
                     name_user: nome,
                     email: email,
                     password: senha,
                     aluno: true
                 })
-                if (response.status === 200) {
+                if (response.status === 201) {
                     setMensagem('Usuário cadastrado com sucesso!');
                     setEmail('');
                     setSenha('');
