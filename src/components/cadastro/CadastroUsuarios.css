@@ -41,6 +41,7 @@
     color: white;
     outline: none;
     border-radius: 5px;
+    
 }
 #cad{
     border: 1px solid #000;
@@ -50,6 +51,8 @@
     border: 1px solid #ff0000;
     background-color: #c20202;
     margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
 }
 #cad:hover{
     background-color: #000000e1;

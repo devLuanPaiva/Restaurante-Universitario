@@ -7,9 +7,8 @@ import './OpcoesCadastro.css'
 const OpcoesCadastro = () => {
     return (
         <React.Fragment>
-            <Header />
+            <Header titulo = "Como deseja se cadastrar?"/>
             <main className='mainOpcoesDuplas'> 
-                <h1>Como deseja se cadastrar?</h1>
                 <section className="opcoesDuplas">
                     
                         <Link className='buttons' to={'/cadFuncionario'}>Funcionário</Link>

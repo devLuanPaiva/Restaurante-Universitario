@@ -10,9 +10,7 @@ const FormCardapio = () => {
     <React.Fragment>
       <Header titulo={'O que desaja cadastra?'} link={'/homeFuncionario'}/>
       <main className='mainOpcoesDuplas'>
-        {/* <div className="opcoesDuplasTitulo">
-          <h1>O que deseja cadastrar?</h1>
-        </div> */}
+
 
         <section className="opcoesDuplas">
           <Link className='buttons' to={'/HomeFuncionario/CadastrarCardapio/Almoco'}>Almoço</Link>

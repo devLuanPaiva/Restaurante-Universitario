@@ -142,25 +142,21 @@
         align-items: center;
         justify-content: center;
     }
-    /* .logo{
-        display: none;
-    } */
+  
    
     
  }
 
 @media screen and (max-width: 900px) {
-    
-    .opcoesDuplas {
-        display: grid;
-        grid-template-columns: repeat(1, 2fr);
-        gap: 2rem;
-       
-    }
-    
-    .opcoesDuplasSemanaJanta {
-        display: grid;
-        grid-template-columns: repeat(2,3fr);
-        gap: 2rem;
-    }
+  .opcoesDuplas {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 2rem;
+  }
+
+  .opcoesDuplasSemanaJanta {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 2rem;
+  }
 }
