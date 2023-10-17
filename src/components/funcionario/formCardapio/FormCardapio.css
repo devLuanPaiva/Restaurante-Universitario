@@ -129,37 +129,35 @@
     width: 80%;
   }
 }
- @media screen and (max-width:500px) {
-    .opcoesDuplasSemana{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .opcoesDuplas {
-        margin: 0;
-        display: flex;
-        gap: 2rem;
-        align-items: center;
-        justify-content: center;
-    }
-    .logo{
-        display: none;
-    }
-    
- }
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .opcoesDuplasSemana {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .opcoesDuplas {
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 @media screen and (max-width: 900px) {
-    
-    .opcoesDuplas {
-        display: grid;
-        grid-template-columns: repeat(1, 2fr);
-        gap: 2rem;
-       
-    }
-    
-    .opcoesDuplasSemanaJanta {
-        display: grid;
-        grid-template-columns: repeat(2,3fr);
-        gap: 2rem;
-    }
+  .opcoesDuplas {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 2rem;
+  }
+
+  .opcoesDuplasSemanaJanta {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 2rem;
+  }
 }
