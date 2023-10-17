@@ -15,46 +15,6 @@
       "email": "lucasanderson@ufersa.edu.br",
       "password": "Lucas432",
       "aluno": false
-    },
-    {
-      "matricula": "2020022484",
-      "name_user": "Leonidas",
-      "email": "leonidas@alunos.ufersa.edu.br",
-      "password": "Leonidas123",
-      "aluno": true,
-      "id": 3
-    },
-    {
-      "matricula": "20230148",
-      "name_user": "Clara ",
-      "email": "clara@ufersa.edu.br",
-      "password": "clara1234",
-      "aluno": false,
-      "id": 4
-    },
-    {
-      "matricula": "12345",
-      "name_user": "emson",
-      "email": "emson@alunos.ufersa.edu.br",
-      "password": "emson123",
-      "aluno": false,
-      "id": 5
-    },
-    {
-      "matricula": "12345678",
-      "name_user": "emson",
-      "email": "emson@exemplo.com",
-      "password": "emson",
-      "aluno": false,
-      "id": 6
-    },
-    {
-      "matricula": "2020022",
-      "name_user": "SAMUEL",
-      "email": "SAMUEL@GMAIL.COM",
-      "password": "SA",
-      "aluno": false,
-      "id": 7
     }
   ],
   "cardapio_almoco": [
@@ -196,27 +156,16 @@
       "tipo": "2",
       "dia": "5",
       "id": 2
+    }
+  ],
+  "sugestoes": [
+    {
+      "novoPrato": "A tecnologia moderna tem transformado a maneira como vivemos, trabalhamos e nos comunicamos. Smartphones, computadores e a internet estão profundamente integrados em nossa rotina diária. No entanto, é crucial lembrar de equilibrar a tecnologia com a vida offline. Passar tempo ao ar livre",
+      "id": 1
     },
     {
-      "estrelas": 3,
-      "comentario": "A tecnologia moderna tem transformado a maneira como vivemos, trabalhamos e nos comunicamos. Smartphones, computadores e a internet estão profundamente integrados em nossa rotina diária. No entanto, é crucial lembrar de equilibrar a tecnologia com a vida offline. Passar tempo ao ar livre, interagir pessoalmente e desconectar periodicamente são práticas essenciais para manter nossa saúde mental e bem-estar. A tecnologia é uma ferramenta poderosa, mas também pode ser viciante. Encontrar um equilíbrio saudável é fundamental para uma vida plena e satisfatória",
-      "tipo": "1",
-      "dia": "2",
-      "id": 3
-    },
-    {
-      "estrelas": 5,
-      "comentario": "fsakfjsalkfjskalfjskldfj",
-      "tipo": "1",
-      "dia": "2",
-      "id": 4
-    },
-    {
-      "estrelas": 4,
-      "comentario": "A tecnologia moderna tem transformado a maneira como vivemos, trabalhamos e nos comunicamos. Smartphones, computadores e a internet estão profundamente integrados em nossa rotina diária. No entanto, é crucial lembrar de equilibrar a tecnologia com a vida offline. Passar tempo ao ar livre, interagir pessoalmente e desconectar periodicamente são práticas essenciais para manter nossa saúde mental e bem-estar. A tecnologia é uma ferramenta poderosa, mas também pode ser viciante. Encontrar um equilíbrio saudável é fundamental para uma vida plena e satisfatória",
-      "tipo": "2",
-      "dia": "4",
-      "id": 5
+      "novoPrato": "é crucial lembrar de equilibrar a tecnologia com a vida offline. Passar tempo ao ar livre, interagir pessoalmente e desconectar periodicamente são práticas essenciais para manter nossa saúde mental e bem-estar. A tecnologia é uma ferramenta poderosa, mas também pode ser viciante. Encontrar um equilíbrio saudável é fundamental para uma vida plena e satisfatória",
+      "id": 2
     }
   ]
 }

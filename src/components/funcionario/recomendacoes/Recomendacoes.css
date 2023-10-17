@@ -1,0 +1,36 @@
+.sugestoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.listSugestoes {
+    background-color: rgba(255, 255, 255, 0.851);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 4px 4px 20px rgba(67, 66, 66, 0.356);
+    max-width: 90%;
+    min-height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.listSugestoes .sugestap {
+    border-bottom: 1.5px solid #000;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.listSugestoes p {
+    display: flex;
+    text-align: justify;
+    overflow-wrap: break-word; /* Use overflow-wrap para quebrar o texto quando necessário */
+    max-width: 95%;
+    margin-left: 10px;
+    box-sizing: border-box;
+}

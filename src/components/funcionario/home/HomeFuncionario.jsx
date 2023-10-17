@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from '../../header/Header'
+import Footer from '../../footer/Footer'
 import './HomeFuncionario.css'
 import { Link } from 'react-router-dom'
-import Footer from '../../footer/Footer'
 
 const HomeFuncionario = () => {
     return (
@@ -24,7 +24,7 @@ const HomeFuncionario = () => {
                             <Link to={'/HomeFuncionario/VisualizarSugestoes'} className="buttons">
                                 Visualizar Sugestões
                             </Link>
-                            <Link to={'/HomeFuncionario/VisualizarFeedbacks'} className="buttons">
+                            <Link to={'/HomeFuncionario/VisualizarFeedbacks/Funcionario'} className="buttons">
                                 Visualizar Feedbacks
                             </Link>
                         </div>

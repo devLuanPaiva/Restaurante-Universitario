@@ -24,9 +24,42 @@ const VisualizarFeedbacks = () => {
             console.error('Erro ao pegar valores:', error);
         }
     }
+    function getDiaDaSemana(dia) {
+        switch (dia) {
+            case "2":
+                return 'da segunda';
+            case "3":
+                return 'da terça';
+            case "4":
+                return 'da quarta';
+            case "5":
+                return 'da quinta';
+            case "6":
+                return 'da sexta';
+            default:
+                return 'do sábado';
+        }
+    }
+
+    function getEstrelas(estrelas) {
+        switch (estrelas) {
+            case 0:
+                return 'horrível';
+            case 1:
+                return 'péssimo';
+            case 2:
+                return 'ruim';
+            case 3:
+                return 'razoável';
+            case 4:
+                return 'ótimo';
+            default:
+                return 'excelente';
+        }
+    }
     return (
         <React.Fragment>
-            <Header titulo={'Feedbacks dos Alunos'} link={`/home${tipo}`} />
+            <Header titulo={`Feedbacks dos ${tipo}s`} link={`/home${tipo}`} />
             <main className='feedbacks'>
                 <section className="listFeedbacks">
                     {avaliacoes.length > 0 ? (
@@ -46,17 +79,7 @@ const VisualizarFeedbacks = () => {
                                     </div>
                                     <p>
                                         O {item.tipo === "1" ? 'almoço ' : 'jantar '}
-                                        d{item.dia === "2" ? 'a segunda'
-                                            : item.dia === "3" ? 'a terça'
-                                                : item.dia === "4" ? 'a quarta'
-                                                    : item.dia === "5" ? 'a quinta'
-                                                        : item.dia === "6" ? 'a sexta'
-                                                            : 'o sábado'} estava {item.estrelas === 0 ? 'horrível'
-                                                                : item.estrelas === 1 ? 'péssimo'
-                                                                    : item.estrelas === 2 ? 'ruim'
-                                                                        : item.estrelas === 3 ? 'razoável'
-                                                                            : item.estrelas === 4 ? 'ótimo'
-                                                                                : 'excelente'} pois, {item.comentario}
+                                        {getDiaDaSemana(item.dia)} estava {getEstrelas(item.estrelas)} pois, {item.comentario}
                                     </p>
                                 </div>
                             ))}
