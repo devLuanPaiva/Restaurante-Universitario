@@ -3,177 +3,121 @@
     {
       "id": 1,
       "matricula": "2020022483",
-      "name_user": "Luan Alves",
-      "email": "luanalves@alunos.ufersa.edu.br",
-      "password": "Luan123",
+      "name_user": "Aluno Exemplo",
+      "email": "aluno@exemplo.com",
+      "password": "1",
       "aluno": true
     },
     {
       "id": 2,
       "matricula": "20210134",
-      "name_user": "Lucas",
-      "email": "lucasanderson@ufersa.edu.br",
-      "password": "Lucas432",
-      "aluno": false
-    },
-    {
-      "matricula": "2020022484",
-      "name_user": "Leonidas",
-      "email": "leonidas@alunos.ufersa.edu.br",
-      "password": "Leonidas123",
-      "aluno": true,
-      "id": 3
-    },
-    {
-      "matricula": "20230148",
-      "name_user": "Clara ",
-      "email": "clara@ufersa.edu.br",
-      "password": "clara1234",
-      "aluno": false,
-      "id": 4
-    },
-    {
-      "matricula": "12345",
-      "name_user": "emson",
-      "email": "emson@alunos.ufersa.edu.br",
-      "password": "emson123",
-      "aluno": false,
-      "id": 5
-    },
-    {
-      "matricula": "12345678",
-      "name_user": "emson",
-      "email": "emson@exemplo.com",
-      "password": "emson",
-      "aluno": false,
-      "id": 6
-    },
-    {
-      "matricula": "12345678",
-      "name_user": "emson franca",
-      "email": "emson@exemplo.com",
+      "name_user": "Funcionario Exemplo",
+      "email": "funcionario@exemplo.com",
       "password": "1",
-      "aluno": false,
-      "id": 7
-    },
-    {
-      "matricula": "",
-      "name_user": "",
-      "email": "",
-      "password": "",
-      "aluno": false,
-      "id": 8
-    },
-    {
-      "matricula": "",
-      "name_user": "",
-      "email": "",
-      "password": "",
-      "aluno": false,
-      "id": 9
+      "aluno": false
     }
   ],
   "cardapio_almoco": [
     {
       "id": 2,
-      "prato_base": "",
-      "acompanhamento": "",
-      "proteina_1": "",
-      "proteina_2": "",
-      "opcao_vegetariana": "",
-      "salada": "",
-      "suco": "",
-      "sobremesa": ""
+      "prato_base": "macarrão ",
+      "acompanhamento": "arroz ",
+      "proteina_1": "frango",
+      "proteina_2": "suíno",
+      "opcao_vegetariana": "ervilha com legumes",
+      "salada": "alface, cenoura, repolho e abacaxi",
+      "suco": "manga",
+      "sobremesa": "banana"
     },
     {
       "id": 3,
-      "prato_base": "",
-      "acompanhamento": "",
-      "proteina_1": "",
-      "proteina_2": "",
-      "opcao_vegetariana": "",
-      "salada": "Frutas",
-      "suco": "",
-      "sobremesa": ""
+      "prato_base": "arroz",
+      "acompanhamento": "feijão",
+      "proteina_1": "suíno",
+      "proteina_2": "peixe",
+      "opcao_vegetariana": "canudos de repolho ",
+      "salada": "beterraba e cenoura  ",
+      "suco": "caja",
+      "sobremesa": "maça "
     },
     {
       "id": 4,
-      "prato_base": "",
-      "acompanhamento": "",
-      "proteina_1": "",
-      "proteina_2": "",
-      "opcao_vegetariana": "",
+      "prato_base": "macarrão ",
+      "acompanhamento": "feijão carioca",
+      "proteina_1": "feijoada ",
+      "proteina_2": "frango ",
+      "opcao_vegetariana": "soja refogada com legumes ",
       "salada": "Alface com Tomate",
-      "suco": "",
-      "sobremesa": ""
+      "suco": "acerola ",
+      "sobremesa": "melancia"
     },
     {
       "id": 5,
-      "prato_base": "",
+      "prato_base": "baião de dois",
       "acompanhamento": "",
-      "proteina_1": "",
-      "proteina_2": "",
-      "opcao_vegetariana": "",
+      "proteina_1": "paçoca de carne",
+      "proteina_2": "frango ao molho",
+      "opcao_vegetariana": "omelete com ervelhas",
       "salada": "Cebolas",
-      "suco": "",
-      "sobremesa": ""
+      "suco": "acerola",
+      "sobremesa": "melacia"
     },
     {
       "id": 6,
-      "prato_base": "",
-      "acompanhamento": "",
-      "proteina_1": "",
-      "proteina_2": "",
-      "opcao_vegetariana": "",
+      "prato_base": "arroz simples",
+      "acompanhamento": "feijão carioca",
+      "proteina_1": "paçoca de carne",
+      "proteina_2": "iscas de frangos",
+      "opcao_vegetariana": "omelete de ervilha",
       "salada": "Vinagrete",
-      "suco": "",
-      "sobremesa": ""
+      "suco": "caju",
+      "sobremesa": "abacaxi"
     },
     {
       "id": 7,
-      "prato_base": "",
-      "acompanhamento": "",
-      "proteina_1": "",
-      "proteina_2": "",
-      "opcao_vegetariana": "",
+      "prato_base": "macarrão ao alho e óleo",
+      "acompanhamento": "feijão preto",
+      "proteina_1": "bife bovino",
+      "proteina_2": "coxa de frango",
+      "opcao_vegetariana": "bolinho de macaxeira",
       "salada": "legumes",
-      "suco": "",
-      "sobremesa": ""
+      "suco": "caju",
+      "sobremesa": "abacaxi"
     }
   ],
   "cardapio_jantar": [
     {
       "id": 2,
-      "prato_base": "Arroz",
-      "acompanhamento1": "Feijão Carioca",
-      "acompanhamento2": "Farofa de Cuscuz",
-      "proteina_1": "Frango",
-      "opcao_vegetariana": "Carne de Soja",
-      "salada": "Leguminosas",
-      "suco": "Abacaxi",
-      "sobremesa": "Pão"
+      "prato_base": "ARROZ COM ERVILHA",
+      "acompanhamento1": "",
+      "acompanhamento2": "CAFÉ PURO",
+      "proteina_1": "TIRINHAS DE CARNE AO MOLHO ROSÊ*",
+      "opcao_vegetariana": "OMELETE DE ERVILHA\t",
+      "salada": "CENOURA, CHUCHU E BATATA INGLESA",
+      "suco": "GOIABA",
+      "sobremesa": "PÃO**"
     },
     {
       "id": 3,
-      "prato_base": "Macarronada",
-      "acompanhamento1": "",
-      "acompanhamento2": "",
-      "proteina_1": "",
-      "opcao_vegetariana": "",
-      "salada": "",
-      "suco": "",
-      "sobremesa": ""
+      "prato_base": "",
+      "acompanhamento1": "MACARRÃO",
+      "acompanhamento2": "CUSCUZ COM CHEIRO VERDE",
+      "proteina_1": "FRANGO COZIDO COM LEGUMES",
+      "opcao_vegetariana": "GRÃO DE BICO REFOGADO COM LEGUMES",
+      "salada": "REPOLHO, PEPINO E TOMATE",
+      "suco": "CAJU",
+      "sobremesa": "PÃO**"
     },
     {
       "id": 4,
-      "prato_base": "Macarrão ao alho e óleo",
-      "acompanhamento1": "",
-      "acompanhamento2": "",
-      "proteina_1": "",
-      "opcao_vegetariana": "",
-      "salada": "",
-      "suco": "",
-      "sobremesa": ""
+      "prato_base": "CAFÉ PURO",
+      "acompanhamento1": "ARROZ SIMPLES",
+      "acompanhamento2": "PIRÃO",
+      "proteina_1": "CARNE MOÍDA",
+      "opcao_vegetariana": "TORTA DE SOJA COM LEGUMES**",
+      "salada": "ALFACE, TOMATE E REPOLHO",
+      "suco": "ACEROLA",
+      "sobremesa": "PÃO**"
     },
     {
       "id": 5,

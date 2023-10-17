@@ -58,3 +58,19 @@
 .CardJantar{
     margin-top: 50px;
 }
+
+@media screen and (max-width: 500px) {
+    .viewCardapio {
+        padding: 1rem;
+    }
+    .padraoTabelas td {
+        font-size: small;
+        text-indent: 2%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .padraoTabelas td {
+        font-size: 12px;
+        
+    }
+}
