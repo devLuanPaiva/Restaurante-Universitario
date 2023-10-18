@@ -22,7 +22,7 @@ const Home = () => {
                         </div>
                         <div>
                             <Link to={'/Homealuno/SugerirPrato'} className="buttons">
-                                Sugerir novo prato
+                                Sugerir Refeição
                             </Link>
                             <Link to={'/Homealuno/RealizarFeedback'} className="buttons">Realizar Feedback</Link>
                         </div>
