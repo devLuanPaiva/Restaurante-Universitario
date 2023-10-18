@@ -20,6 +20,9 @@ import AvaliarTipo from './components/alunos/avaliacoes/AvaliarTipo';
 import AvaliarDia from './components/alunos/avaliacoes/AvaliarDia';
 import AvaliarDiaJantar from './components/alunos/avaliacoes/AvaliarDiaJantar';
 
+import NovoPrato from './components/alunos/recomendacoes/NovoPrato';
+import Almoco from './components/alunos/visualizacoes/cardapio/Almoco';
+import Janta from './components/alunos/visualizacoes/cardapio/Janta';
 
 
 function App() {
@@ -39,6 +42,10 @@ function App() {
         <Route path='/Homealuno/RealizarFeedback/Almoco/:tipo/:dia' element={<AvaliarComida/>} />
         <Route path='/Homealuno/RealizarFeedback/Jantar/:tipo/:dia' element={<AvaliarComida/>} />
         <Route path='/Homealuno/VisualizarCardapio' element={<ViewCardapio/>} />
+        
+        <Route path='/Homealuno/NovoPrato' element={<NovoPrato/>} />
+        <Route path='/Homealuno/Janta' element={<Janta/>} />
+        <Route path='/Homealuno/Almoco' element={<Almoco/>} />
 
 
         <Route path='/cadFuncionario' element={<CadFuncionario />} />

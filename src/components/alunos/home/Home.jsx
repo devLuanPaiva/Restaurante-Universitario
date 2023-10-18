@@ -21,7 +21,7 @@ const Home = () => {
                             </Link>
                         </div>
                         <div>
-                            <Link to={'/Homealuno/SugerirPrato'} className="buttons">
+                            <Link to={'/Homealuno/NovoPrato'} className="buttons">
                                 Sugerir novo prato
                             </Link>
                             <Link to={'/Homealuno/RealizarFeedback'} className="buttons">Realizar Feedback</Link>
