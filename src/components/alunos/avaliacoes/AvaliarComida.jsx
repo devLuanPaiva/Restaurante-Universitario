@@ -14,11 +14,11 @@ const AvaliarComida = () => {
     const [text, setText] = useState('');
 
     const handleInputChange = (e) => {
-        if (e.target.value.length <= 100) {
+        if (e.target.value.length <= 500) {
             setText(e.target.value);
         }
     };
-    let remainingCharacters = 100 - text.length;
+    let remainingCharacters = 500 - text.length;
 
     const cadastrarAvaliacao = async (e) => {
         e.preventDefault();
@@ -79,7 +79,7 @@ const AvaliarComida = () => {
                             <textarea
                                 value={text}
                                 onChange={handleInputChange}
-                                placeholder="Digite no máximo 100 caracteres..."
+                                placeholder="Digite no máximo 500 caracteres..."
                                 rows={4}
                                 cols={50}
                                 style={{ width: '100%', height: '', resize: 'none', textIndent: '5px' }}

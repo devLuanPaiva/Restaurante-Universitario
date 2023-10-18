@@ -45,7 +45,7 @@ const CadAluno = () => {
     }
     return (
         <React.Fragment>
-            <Header titulo={"Cadastrar Aluno"} />
+            <Header titulo={"Cadastrar Aluno"}link={'/login'}/>
             <main>
                 <section className='cadastroUsuario'>
                     <form>
@@ -56,8 +56,8 @@ const CadAluno = () => {
                         <input type="password" value={confirmarSenha} onChange={e => setConfirmarSenha(e.target.value)} className='informacoesCadastro' placeholder='Confirmar Senha' />
                     </form>
                     <div className="opcoesFinais">
-                        <Link to={'/login'} id='cancel'>Cancelar</Link>
-                        <button id='cad' onClick={handleAluno}>Cadastrar</button>
+                        <Link  to={'/login'} id='cancel'>Cancelar</Link>
+                        <button  id='cad' onClick={handleAluno}>Cadastrar</button>
                     </div>
                     <p>{mensagem}</p>
                 </section>

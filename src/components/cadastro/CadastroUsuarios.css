@@ -1,4 +1,4 @@
-.cadastroUsuario{
+.cadastroUsuario {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-.cadastroUsuario form{
+.cadastroUsuario form {
     display: flex;
     flex-direction: column;
     height: 80%;
@@ -21,42 +21,59 @@
     justify-content: space-around;
     box-sizing: border-box;
 }
-.cadastroUsuario input{
+
+.cadastroUsuario input {
     height: 40px;
     outline: none;
     border: none;
     border-bottom: 1px solid #AF0000;
-   
+
 }
-.opcoesFinais{
+
+.opcoesFinais {
     display: flex;
     justify-content: flex-end;
     width: 90%;
 }
-.opcoesFinais > button{
-    width: 100px;
-    height: 35px;
-    font-weight: bold;
-    cursor: pointer;
+
+#cad {
+
+    text-decoration: none;
+    text-align: center;
     color: white;
-    outline: none;
+    padding: 1rem 2rem;
+    width: 129.92px;
+    height: 55.11px;
+    font-weight: bold;
     border-radius: 5px;
-    
-}
-#cad{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    gap: 1rem;
+
     border: 1px solid #000;
     background-color: #000;
 }
-#cancel{
+
+#cancel {
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 2rem;
+   
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    gap: 1rem;
     border: 1px solid #ff0000;
     background-color: #c20202;
     margin-right: 10px;
-    text-decoration: none;
     color: #fff;
 }
-#cad:hover{
+
+#cad:hover {
     background-color: #000000e1;
 }
-#cancel:hover{
+
+#cancel:hover {
     background-color: #ff0000d1;
 }
