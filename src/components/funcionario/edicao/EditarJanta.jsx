@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Header from '../../header/Header';
 import Footer from '../../footer/Footer';
 import { useParams } from 'react-router-dom';
@@ -16,7 +16,8 @@ const EditarJanta = () => {
   const [suco, setSuco] = useState('')
   const { dia } = useParams()
 
-  const pegarValores = useCallback(async () => {
+  const pegarValoresJantar = useCallback(async () => {
+    console.log(dia)
     try {
       const response = await axios.get(`http://localhost:5000/cardapio_jantar/${dia}`);
       if (response.status === 200) {
@@ -36,8 +37,8 @@ const EditarJanta = () => {
   }, [dia]);
 
   useEffect(() => {
-    pegarValores()
-  }, [pegarValores])
+    pegarValoresJantar()
+  }, [pegarValoresJantar])
 
   const submitMenu = async (e) => {
     e.preventDefault()

@@ -6,16 +6,16 @@ import './FormCardapio.css'
 const EscolhaDiaJanta = () => {
     return (
         <React.Fragment>
-            <Header titulo = {'Escolha o dia da senana'} link={'/homeFuncionario'} />
+            <Header titulo={'Escolha o dia da semana'} link={'/homeFuncionario'} />
             <main className='escolhasDias'>
                 <section className='opcoesDuplas'>
-                    <div className="opcoesDuplasSemana opcoesDuplasSemanaJanta">
-                        <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Jantar/${2}`}>Segunda</Link>
-                        <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Jantar/${3}`}>Terca</Link>
-                        <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Jantar/${4}`}>Quarta</Link>
-                        <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Jantar/${5}`}>Quinta</Link>
-                        <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Jantar/${0}`}>Sexta</Link>
-                    </div>
+
+                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Jantar/${2}`}>Segunda</Link>
+                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Jantar/${3}`}>Terca</Link>
+                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Jantar/${4}`}>Quarta</Link>
+                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Jantar/${5}`}>Quinta</Link>
+                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Jantar/${0}`}>Sexta</Link>
+
 
                 </section>
             </main>

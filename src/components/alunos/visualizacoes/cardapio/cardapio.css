@@ -1,27 +1,32 @@
 .viewCardapio {
     display: flex;
     min-height: 100vh;
-    padding: 50px 0px 50px 0px;
+    padding: 50px;
     flex-direction: column;
     box-sizing: border-box;
 }
 
 .padraoTabelas {
-    min-width: 60vw;
     margin: 0 auto;
+    width: 100%;
+    max-width: 95%;
+    table-layout: fixed;
     background-color: rgba(255, 255, 255, 0.851);
     border-collapse: collapse;
     padding-top: 0px;
     border-radius: 8px;
     box-shadow: 4px 4px 20px rgba(67, 66, 66, 0.356);
+    box-sizing: border-box;
 }
-.padraoTabelas caption{
+
+.padraoTabelas caption {
     background-color: #8d0101;
     color: white;
     font-weight: bold;
     font-variant: small-caps;
     border-radius: 8px 8px 0px 0px;
 }
+
 .padraoTabelas th {
     background-color: #AF0000;
     color: white;
@@ -30,13 +35,6 @@
     text-align: center;
 }
 
-/* #pontaEsquerda {
-    border-top-left-radius: 8px;
-}
-
-#pontaDireita {
-    border-top-right-radius: 8px;
-} */
 
 .padraoTabelas>tbody>tr {
     height: 50px;
@@ -45,17 +43,26 @@
 }
 
 .padraoTabelas td {
-    text-align: center;
+
     border-left: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    max-width: 100px;
+    text-wrap: wrap;
+    white-space: normal; /* Permite que o texto quebre */
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    padding: 10px;
 }
+
+
 
 .padraoTabelas .primeiraColuna {
     text-align: left;
-    text-indent: 10%;
     border-left: none;
+    padding-left: 10px ;
 }
 
-.CardJantar{
+.CardJantar {
     margin-top: 50px;
 }
 
@@ -63,14 +70,16 @@
     .viewCardapio {
         padding: 1rem;
     }
+
     .padraoTabelas td {
         font-size: small;
-        text-indent: 2%;
+       
+
     }
 }
+
 @media screen and (max-width: 420px) {
     .padraoTabelas td {
-        font-size: 12px;
-        
+        font-size: 10px;
     }
 }

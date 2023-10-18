@@ -1,8 +1,10 @@
 main{
-   
+   min-height: 85vh;
     display: flex;
     align-items:center ;
     justify-content: center;
+    box-sizing: border-box;
+    padding: 50px;
 }
 .opcoes{
     background-color: #FFF8F2;
@@ -23,9 +25,7 @@ main{
     gap: 2rem;
     padding: 2rem 4rem;
 }
-.tituloAluno {
-    font-size: 3rem;
-}
+
 @media screen and (max-width: 500px) {
     .opcoes > div{
         padding: 1rem;

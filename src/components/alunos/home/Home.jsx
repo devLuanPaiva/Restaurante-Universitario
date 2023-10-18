@@ -7,21 +7,21 @@ import { Link } from 'react-router-dom'
 const Home = () => {
     return (
         <React.Fragment>
-            <Header titulo = {'Menu do aluno'} />
+            <Header titulo = {'Menu do Aluno'} link={'/login'} />
             <main>
-            <div className="container-funcionario">
+            <div className="container">
                 
                     <section className='opcoes'>
                         <div>
                             <Link to={'/Homealuno/VisualizarCardapio'} className="buttons">
                                 Visualizar Cardápio
                             </Link>
-                            <Link to={'/Homealuno/VisualizarFeedbacks'} className="buttons">
+                            <Link to={'/Homealuno/VisualizarFeedbacks/Aluno'} className="buttons">
                                 Visualizar Feedbacks
                             </Link>
                         </div>
                         <div>
-                            <Link to={'/Homealuno/NovoPrato'} className="buttons">
+                            <Link to={'/Homealuno/SugerirPrato'} className="buttons">
                                 Sugerir novo prato
                             </Link>
                             <Link to={'/Homealuno/RealizarFeedback'} className="buttons">Realizar Feedback</Link>

@@ -1,25 +1,13 @@
-.escolhasDias{
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px 400px;
-    grid-template-areas: 
-    'title title'
-    'options options'
-    ;
 
-}
 .escolhasDias {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 2rem;
+    padding: 50px
+    
 }
 
-.opcoesDuplas{
-   width: 80%;
-}
 .mainFormCardapio{
     display: flex;
     max-width: 100vw;
@@ -73,8 +61,3 @@
     background-color: #ff0000d1;
 }
 
-@media screen and (max-width: 500px) {
-    .escolhasDias{
-        margin-top: 1.5rem;
-    }
-}

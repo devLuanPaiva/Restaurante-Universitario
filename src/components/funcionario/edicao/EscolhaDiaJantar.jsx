@@ -2,12 +2,12 @@ import React from 'react'
 import Header from '../../header/Header'
 import Footer from '../../footer/Footer'
 import { Link } from 'react-router-dom'
-import './Edicao.css'
+// import './Edicao.css'
 
 const EscolhaDiaJantar = () => {
     return (
         <React.Fragment>
-            <Header titulo = {'Escolha o dia da senana'} link={'/homeFuncionario'} />
+            <Header titulo = {'Escolha o dia da semana'} link={'/homeFuncionario'} />
             <main className='escolhasDias'>
                 
                 <section className='opcoesDuplas'>

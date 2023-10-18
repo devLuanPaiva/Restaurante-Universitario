@@ -7,7 +7,9 @@
 input[type="radio"] {
     display: none;
 }
-
+.escolhasDias{
+    padding: 50px;
+}
 .formAvaliacao {
     border: 2px solid #af0000;
     height: 400px;

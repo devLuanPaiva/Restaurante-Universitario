@@ -164,5 +164,15 @@
       "dia": "2",
       "id": 3
     }
+  ],
+  "sugestoes": [
+    {
+      "novoPrato": "A tecnologia moderna tem transformado a maneira como vivemos, trabalhamos e nos comunicamos. Smartphones, computadores e a internet estão profundamente integrados em nossa rotina diária. No entanto, é crucial lembrar de equilibrar a tecnologia com a vida offline. Passar tempo ao ar livre",
+      "id": 1
+    },
+    {
+      "novoPrato": "é crucial lembrar de equilibrar a tecnologia com a vida offline. Passar tempo ao ar livre, interagir pessoalmente e desconectar periodicamente são práticas essenciais para manter nossa saúde mental e bem-estar. A tecnologia é uma ferramenta poderosa, mas também pode ser viciante. Encontrar um equilíbrio saudável é fundamental para uma vida plena e satisfatória",
+      "id": 2
+    }
   ]
 }

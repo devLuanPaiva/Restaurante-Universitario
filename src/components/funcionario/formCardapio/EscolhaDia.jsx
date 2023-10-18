@@ -7,23 +7,20 @@ import './FormCardapio.css'
 const EscolhaDia = () => {
     return (
         <React.Fragment>
-            <Header titulo = {'Escolha o dia da senana'} link={'/homeFuncionario'}/>
+            <Header titulo={'Escolha o dia da semana'} link={'/homeFuncionario'} />
             <main className='escolhasDias'>
-                <div className="escolhaDiasTitulo">
-                    
-                </div>
+
                 <section className='opcoesDuplas'>
-                    <div className="opcoesDuplasSemana">    
-                        <Link  className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${2}`}>Segunda</Link>
-                        <Link  className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${3}`}>Terca</Link>
-                        <Link  className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${4}`}>Quarta</Link>
-                        <Link  className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${5}`}>Quinta</Link>
-                        <Link  className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${6}`}>Sexta</Link>
-                        <Link  className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${0}`}>Sábado</Link>
-                    </div>
+
+                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${2}`}>Segunda</Link>
+                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${3}`}>Terca</Link>
+                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${4}`}>Quarta</Link>
+                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${5}`}>Quinta</Link>
+                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${6}`}>Sexta</Link>
+                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${0}`}>Sábado</Link>
                 </section>
             </main>
-            <Footer/>
+            <Footer />
         </React.Fragment>
     )
 }

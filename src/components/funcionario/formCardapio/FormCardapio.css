@@ -1,22 +1,9 @@
 .escolhasDias {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 80px 400px;
-  grid-template-areas:
-    "title title"
-    "options options";
-}
-
-.opcoesDuplas {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-}
-.opcoesDuplasSemana {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 90%;
-  gap: 1rem;
+  align-items: center;
+  padding: 50px
 }
 
 .mainFormCardapio {
