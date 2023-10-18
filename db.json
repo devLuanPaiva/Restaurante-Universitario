@@ -122,24 +122,24 @@
     {
       "id": 5,
       "prato_base": "Cuscuz temperado",
-      "acompanhamento1": "",
-      "acompanhamento2": "",
-      "proteina_1": "",
+      "acompanhamento1": "ARROZ SIMPLES",
+      "acompanhamento2": "PIRÃO",
+      "proteina_1": "CARNE MOÍDA",
       "opcao_vegetariana": "",
-      "salada": "",
-      "suco": "",
-      "sobremesa": ""
+      "salada": "ALFACE, TOMATE E REPOLHO",
+      "suco": "ACEROLA",
+      "sobremesa": "PÃO**"
     },
     {
       "id": 6,
       "prato_base": "Arroz temperado",
       "acompanhamento1": "",
-      "acompanhamento2": "",
-      "proteina_1": "",
+      "acompanhamento2": "PIRÃO",
+      "proteina_1": "CARNE MOÍDA",
       "opcao_vegetariana": "",
-      "salada": "",
-      "suco": "",
-      "sobremesa": ""
+      "salada": "ALFACE, TOMATE E REPOLHO",
+      "suco": "ACEROLA",
+      "sobremesa": "PÃO**"
     }
   ],
   "avaliacoes": [

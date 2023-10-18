@@ -10,6 +10,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    
 }
 .opcoes{
     background-color: #FFF8F2;
