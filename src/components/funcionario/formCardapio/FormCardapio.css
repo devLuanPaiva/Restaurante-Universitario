@@ -13,6 +13,7 @@
   flex-direction: column;
   box-sizing: border-box;
 }
+
 .mainOpcoesDuplas {
   display: flex;
   flex-direction: column;
@@ -21,6 +22,7 @@
   text-align: center;
   padding-bottom: 2rem;
 }
+
 .opcoesDuplasTitulo {
   color: #000000c2;
 }
@@ -39,6 +41,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
 }
+
 .formCardapio form {
   display: flex;
   flex-direction: column;
@@ -47,18 +50,21 @@
   justify-content: space-around;
   box-sizing: border-box;
 }
+
 .formCardapio input {
   height: 40px;
   outline: none;
   border: none;
   border-bottom: 1px solid #af0000;
 }
+
 .opcoesFinais {
   display: flex;
   justify-content: flex-end;
   width: 90%;
 }
-.opcoesFinais > button {
+
+.opcoesFinais>button {
   width: 100px;
   height: 35px;
   font-weight: bold;
@@ -67,31 +73,18 @@
   outline: none;
   border-radius: 5px;
 }
-#cad {
-  border: 1px solid #000;
-  background-color: #000;
-}
-#cancel {
-  border: 1px solid #ff0000;
-  background-color: #c20202;
-  margin-right: 10px;
-}
-#cad:hover {
-  background-color: #000000e1;
-}
-#cancel:hover {
-  background-color: #ff0000d1;
-}
-.escolhasDias > h1 {
+.escolhasDias>h1 {
   font-size: 40px;
   color: #0000009c;
 }
+
 @media screen and (max-width: 375px) {
-  .escolhasDias > h1 {
+  .escolhasDias>h1 {
     display: flex;
     font-size: 2rem;
     justify-content: space-around;
   }
+
   .opcoesDuplas {
     gap: 2rem;
     width: 80%;
@@ -112,20 +105,24 @@
   .escolhaDiasTitulo {
     font-size: 16px;
   }
+
   .formCardapio {
     width: 80%;
   }
 }
+
 @media screen and (max-width: 500px) {
   header {
     flex-direction: column;
     gap: 1rem;
   }
+
   .opcoesDuplasSemana {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
+
   .opcoesDuplas {
     margin: 0;
     display: flex;

@@ -106,8 +106,8 @@ const CadFuncionario = () => {
                         <input type="password" value={confirmarSenha} onChange={e => setConfirmarSenha(e.target.value)} className='informacoesCadastro' placeholder='Confirmar Senha' />
                     </form>
                     <div className="opcoesFinais">
-                        <Link to={'/login'} id='cancel'>Cancelar</Link>
-                        <button id='cad' onClick={handleFuncionario}>Cadastrar</button>
+                        <Link to={'/login'} id='cancelar'>Cancelar</Link>
+                        <button id='cadastrar' onClick={handleFuncionario}>Cadastrar</button>
                     </div>
                     <p>{mensagem} </p>
                 </section>

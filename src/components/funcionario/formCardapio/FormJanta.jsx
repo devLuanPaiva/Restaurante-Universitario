@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Header from '../../header/Header';
 import Footer from '../../footer/Footer';
 import './FormCardapio.css'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 const FormJanta = () => {
@@ -46,7 +46,7 @@ const FormJanta = () => {
   }
   return (
     <React.Fragment>
-      <Header titulo={'Cardápio  do jantar'}  link={'/homeFuncionario'}/>
+      <Header titulo={'Cardápio  do jantar'} link={'/homeFuncionario'} />
       <main className='mainFormCardapio'>
         <section className='formCardapio'>
           <form>
@@ -101,8 +101,8 @@ const FormJanta = () => {
           </form>
 
           <div className='opcoesFinais'>
-            <button id='cancel'>Cancelar</button>
-            <button id='cad' onClick={submitMenu}>Cadastrar</button>
+            <Link to={'/homeFuncionario'} id='cancelar'>Cancelar</Link>
+            <button id='cadastrar' onClick={submitMenu}>Cadastrar</button>
           </div>
         </section>
 

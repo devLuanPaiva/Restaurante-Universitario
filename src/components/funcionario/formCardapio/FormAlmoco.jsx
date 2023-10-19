@@ -3,7 +3,7 @@ import './FormCardapio.css'
 import Header from '../../header/Header';
 import Footer from '../../footer/Footer';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const FormAlmoco = () => {
   const [pratoBase, setPratoBase] = useState('')
@@ -16,7 +16,7 @@ const FormAlmoco = () => {
   const [suco, setSuco] = useState('')
   const { dia } = useParams()
 
- 
+
   const submitMenu = async (e) => {
     e.preventDefault()
     try {
@@ -103,8 +103,8 @@ const FormAlmoco = () => {
           </form>
 
           <div className='opcoesFinais'>
-          <button id='cancel'>Cancelar</button>
-            <button id='cad'  onClick={submitMenu}>Cadastrar</button>
+            <Link to={'/homeFuncionario'} id='cancelar'>Cancelar</Link>
+            <button id='cadastrar' onClick={submitMenu}>Cadastrar</button>
           </div>
         </section>
       </main>

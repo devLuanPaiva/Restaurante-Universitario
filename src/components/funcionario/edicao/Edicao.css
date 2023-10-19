@@ -45,19 +45,3 @@
     outline: none;
     border-radius: 5px;
 }
-#cad{
-    border: 1px solid #000;
-    background-color: #000;
-}
-#cancel{
-    border: 1px solid #ff0000;
-    background-color: #c20202;
-    margin-right: 10px;
-}
-#cad:hover{
-    background-color: #000000e1;
-}
-#cancel:hover{
-    background-color: #ff0000d1;
-}
-

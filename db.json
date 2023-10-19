@@ -8,19 +8,46 @@
       "aluno": true,
       "token": "kIzz0Iw47rxUaQziXthW9yZZJ",
       "id": 1
+    },
+    {
+      "matricula": "0525130910",
+      "name_user": "Rian",
+      "email": "rian.freitas@gmail.com",
+      "password": "R",
+      "aluno": true,
+      "token": "HtyXCR19y1iJieGkXi0ITAE2l",
+      "id": 2
+    },
+    {
+      "matricula": "05152940",
+      "name_user": "Raul",
+      "email": "raul.cardoso@gmail.com",
+      "password": "3623",
+      "aluno": false,
+      "token": "Lb8SzvH3yMoWyLtk34tZmONVM",
+      "id": 3
+    },
+    {
+      "matricula": "29293045",
+      "name_user": "Wesley",
+      "email": "wesley@gmail.com",
+      "password": "w",
+      "aluno": false,
+      "token": "Jp1XXzAbCXkGVQ9KwrxALvWFx",
+      "id": 4
     }
   ],
   "cardapio_almoco": [
     {
       "id": 2,
-      "prato_base": "macarrão ",
-      "acompanhamento": "arroz ",
-      "proteina_1": "frango",
-      "proteina_2": "suíno",
-      "opcao_vegetariana": "ervilha com legumes",
-      "salada": "alface, cenoura, repolho e abacaxi",
-      "suco": "manga",
-      "sobremesa": "banana"
+      "prato_base": "Risoto de frango",
+      "acompanhamento": "macaxeira",
+      "proteina_1": "Carne de sol",
+      "proteina_2": "peixe frito",
+      "opcao_vegetariana": "alface",
+      "salada": "tomate",
+      "suco": "Abacaxi",
+      "sobremesa": "mousse de maracujá"
     },
     {
       "id": 3,
@@ -156,6 +183,13 @@
       "tipo": "1",
       "dia": "2",
       "id": 3
+    },
+    {
+      "estrelas": 4,
+      "comentario": "Amei o caldo de cana",
+      "tipo": "1",
+      "dia": "4",
+      "id": 4
     }
   ],
   "sugestoes": [
@@ -166,6 +200,10 @@
     {
       "novoPrato": "é crucial lembrar de equilibrar a tecnologia com a vida offline. Passar tempo ao ar livre, interagir pessoalmente e desconectar periodicamente são práticas essenciais para manter nossa saúde mental e bem-estar. A tecnologia é uma ferramenta poderosa, mas também pode ser viciante. Encontrar um equilíbrio saudável é fundamental para uma vida plena e satisfatória",
       "id": 2
+    },
+    {
+      "novoPrato": "Sugiro arroz, feijão e macaxeira",
+      "id": 3
     }
   ]
 }

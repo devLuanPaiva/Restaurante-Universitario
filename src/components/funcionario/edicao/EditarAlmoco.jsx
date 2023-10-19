@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Header from '../../header/Header';
 import Footer from '../../footer/Footer';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './Edicao.css'
 
 const EditarAlmoco = () => {
@@ -34,7 +34,7 @@ const EditarAlmoco = () => {
       console.error('Erro ao pegar valores:', error);
     }
   }, [dia]);
-  
+
   useEffect(() => {
     pegarValores()
   }, [pegarValores])
@@ -70,69 +70,69 @@ const EditarAlmoco = () => {
 
   return (
     <React.Fragment>
-    <Header titulo={"Cardápio do Almoço"} link={'/homeFuncionario'} />
-    <main className='mainFormCardapio'>
-      
-      <section className='formCardapio'>
-        <form>
-          <input
-            placeholder='Prato Base'
-            type="text"
-            value={pratoBase}
-            onChange={e => setPratoBase(e.target.value)}
-          />
-          <input
-            placeholder='Acompanhamento'
-            type="text"
-            value={acompanhamento}
-            onChange={e => setAcompanhamento(e.target.value)}
-          />
-          <input
-            placeholder='Protetina 1'
-            type="text"
-            value={proteina1}
-            onChange={e => setProteina1(e.target.value)}
-          />
-          <input
-            placeholder='Proteina 2'
-            type="text"
-            value={proteina2}
-            onChange={e => setProteina2(e.target.value)}
-          />
-          <input
-            placeholder='Opção Vegetariana'
-            type="text"
-            value={vegeitariana}
-            onChange={e => setVegeitariana(e.target.value)}
-          />
-          <input
-            placeholder='Salada'
-            type="text"
-            value={salada}
-            onChange={e => setSalada(e.target.value)}
-          />
-          <input
-            placeholder='Sobremesa'
-            type="text"
-            value={sobremesa}
-            onChange={e => setSobremesa(e.target.value)}
-          />
-          <input
-            placeholder='Suco'
-            type="text"
-            value={suco}
-            onChange={e => setSuco(e.target.value)}
-          />
-        </form>
+      <Header titulo={"Cardápio do Almoço"} link={'/homeFuncionario'} />
+      <main className='mainFormCardapio'>
 
-        <div className='opcoesFinais'>
-        <button id='cancel'>Cancelar</button>
-          <button id='cad'  onClick={submitMenu}>Cadastrar</button>
-        </div>
-      </section>
-    </main>
-    <Footer />
-  </React.Fragment>
+        <section className='formCardapio'>
+          <form>
+            <input
+              placeholder='Prato Base'
+              type="text"
+              value={pratoBase}
+              onChange={e => setPratoBase(e.target.value)}
+            />
+            <input
+              placeholder='Acompanhamento'
+              type="text"
+              value={acompanhamento}
+              onChange={e => setAcompanhamento(e.target.value)}
+            />
+            <input
+              placeholder='Protetina 1'
+              type="text"
+              value={proteina1}
+              onChange={e => setProteina1(e.target.value)}
+            />
+            <input
+              placeholder='Proteina 2'
+              type="text"
+              value={proteina2}
+              onChange={e => setProteina2(e.target.value)}
+            />
+            <input
+              placeholder='Opção Vegetariana'
+              type="text"
+              value={vegeitariana}
+              onChange={e => setVegeitariana(e.target.value)}
+            />
+            <input
+              placeholder='Salada'
+              type="text"
+              value={salada}
+              onChange={e => setSalada(e.target.value)}
+            />
+            <input
+              placeholder='Sobremesa'
+              type="text"
+              value={sobremesa}
+              onChange={e => setSobremesa(e.target.value)}
+            />
+            <input
+              placeholder='Suco'
+              type="text"
+              value={suco}
+              onChange={e => setSuco(e.target.value)}
+            />
+          </form>
+
+          <div className='opcoesFinais'>
+            <Link to={'/homeFuncionario'} id='cancelar'>Cancelar</Link>
+            <button id='cadastrar' onClick={submitMenu}>Cadastrar</button>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </React.Fragment>
   )
 }
 

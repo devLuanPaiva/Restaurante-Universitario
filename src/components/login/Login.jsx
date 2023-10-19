@@ -60,7 +60,7 @@ const Login = () => {
                         <input type="submit" value="ENTRAR" className="submit" />
 
                         <div>
-                            <p className='descricao'>Ainda não tem cadastro? <Link to={'/cadastro'} id='cadastrar'>Cadastrar-se</Link> </p>
+                            <p className='descricao'>Ainda não tem cadastro? <Link to={'/cadastro'} id='cadastrarUser'>Cadastrar-se</Link> </p>
                         </div>
 
                     </form>

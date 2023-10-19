@@ -35,10 +35,12 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Login />} />
         <Route path='*' element={<Login />} />
+        <Route path='/cadastro' element={<OpcoesCadastro />} />
+        <Route path='/cadAluno' element={<CadAluno />} />
+        <Route path='/cadFuncionario' element={<CadFuncionario />} />
+
         <Route path='/' element={<ProtectedRoute />}>
 
-          <Route path='/cadastro' element={<OpcoesCadastro />} />
-          <Route path='/cadAluno' element={<CadAluno />} />
           <Route path='/HomeAluno' element={<Home />} />
           <Route path='/Homealuno/RealizarFeedback' element={<AvaliarTipo />} />
           <Route path='/Homealuno/RealizarFeedback/Almoco' element={<AvaliarDia />} />
@@ -52,7 +54,6 @@ function App() {
 
 
 
-          <Route path='/cadFuncionario' element={<CadFuncionario />} />
           <Route path='/HomeFuncionario' element={<HomeFuncionario />} />
           <Route path='/HomeFuncionario/CadastrarCardapio' element={<FormCardapio />} />
 

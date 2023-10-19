@@ -17,7 +17,7 @@ const EscolhaDia = () => {
                     <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${4}`}>Quarta</Link>
                     <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${5}`}>Quinta</Link>
                     <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${6}`}>Sexta</Link>
-                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${0}`}>Sábado</Link>
+                    <Link className='buttons' to={`/HomeFuncionario/CadastrarCardapio/Almoco/${7}`}>Sábado</Link>
                 </section>
             </main>
             <Footer />

@@ -31,7 +31,8 @@ code {
   border: 1px solid #AF0000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .buttons:hover {
@@ -52,6 +53,42 @@ code {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+#cadastrar, #cancelar{
+
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+#cadastrar {
+  
+  border: 1px solid #000;
+  background-color: #000;
+  color: white;
+}
+
+#cancelar {
+ 
+  background-color: #c20202;
+  margin-right: 10px;
+}
+
+#cadastrar:hover {
+  background-color: #000000e1;
+}
+
+#cancelar:hover {
+  background-color: #ff0000d1;
 }
 
 @media screen and (max-width: 375px) {

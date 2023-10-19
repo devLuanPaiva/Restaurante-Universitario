@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import Header from '../../header/Header';
 import Footer from '../../footer/Footer';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import './Edicao.css'
 
@@ -127,8 +127,8 @@ const EditarJanta = () => {
           </form>
 
           <div className='opcoesFinais'>
-            <button id='cancel'>Cancelar</button>
-            <button id='cad' onClick={submitMenu}>Cadastrar</button>
+            <Link to={'/homeFuncionario'} id='cancelar'>Cancelar</Link>
+            <button id='cadastrar' onClick={submitMenu}>Cadastrar</button>
           </div>
         </section>
 
