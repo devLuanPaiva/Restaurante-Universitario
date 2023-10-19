@@ -23,6 +23,7 @@ import VisualizarFeedbacks from './components/alunos/visualizacoes/feedbacks/Vis
 import NovoPrato from './components/alunos/recomendacoes/NovoPrato';
 import Recomendacoes from './components/funcionario/recomendacoes/Recomendacoes';
 import EditarJanta from './components/funcionario/edicao/EditarJanta';
+import ProtectedRoute from './ProtectedRoute';
 
 
 
@@ -34,38 +35,42 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Login />} />
         <Route path='*' element={<Login />} />
-        <Route path='/cadastro' element ={ <OpcoesCadastro />}/>
-        <Route path='/cadAluno' element={<CadAluno />} />
-        <Route path='/HomeAluno' element={<Home />} />
-        <Route path='/Homealuno/RealizarFeedback' element={<AvaliarTipo />} />
-        <Route path='/Homealuno/RealizarFeedback/Almoco' element={<AvaliarDia />} />
-        <Route path='/Homealuno/RealizarFeedback/Jantar' element={<AvaliarDiaJantar />} />
-        <Route path='/Homealuno/RealizarFeedback/Almoco/:tipo/:dia' element={<AvaliarComida/>} />
-        <Route path='/Homealuno/RealizarFeedback/Jantar/:tipo/:dia' element={<AvaliarComida/>} />
-        <Route path='/Homealuno/VisualizarCardapio' element={<ViewCardapio/>} />
-        <Route path='/Homealuno/VisualizarFeedbacks/:tipo' element={<VisualizarFeedbacks/>} />
-        <Route path='/Homealuno/SugerirPrato' element={<NovoPrato/>} />
+        <Route path='/' element={<ProtectedRoute />}>
+
+          <Route path='/cadastro' element={<OpcoesCadastro />} />
+          <Route path='/cadAluno' element={<CadAluno />} />
+          <Route path='/HomeAluno' element={<Home />} />
+          <Route path='/Homealuno/RealizarFeedback' element={<AvaliarTipo />} />
+          <Route path='/Homealuno/RealizarFeedback/Almoco' element={<AvaliarDia />} />
+          <Route path='/Homealuno/RealizarFeedback/Jantar' element={<AvaliarDiaJantar />} />
+          <Route path='/Homealuno/RealizarFeedback/Almoco/:tipo/:dia' element={<AvaliarComida />} />
+          <Route path='/Homealuno/RealizarFeedback/Jantar/:tipo/:dia' element={<AvaliarComida />} />
+          <Route path='/Homealuno/VisualizarCardapio' element={<ViewCardapio />} />
+          <Route path='/Homealuno/VisualizarFeedbacks/:tipo' element={<VisualizarFeedbacks />} />
+          <Route path='/Homealuno/SugerirPrato' element={<NovoPrato />} />
 
 
 
 
-        <Route path='/cadFuncionario' element={<CadFuncionario />} />
-        <Route path='/HomeFuncionario' element={<HomeFuncionario />} />
-        <Route path='/HomeFuncionario/CadastrarCardapio' element={<FormCardapio/>} />
-        
-        <Route path='/HomeFuncionario/CadastrarCardapio/Almoco/' element={<EscolhaDia/>} />
-        <Route path='/HomeFuncionario/VisualizarFeedbacks/:tipo' element={<VisualizarFeedbacks/>} />
-        <Route path='/HomeFuncionario/CadastrarCardapio/Almoco/:dia' element={<FormAlmoco/>} />
+          <Route path='/cadFuncionario' element={<CadFuncionario />} />
+          <Route path='/HomeFuncionario' element={<HomeFuncionario />} />
+          <Route path='/HomeFuncionario/CadastrarCardapio' element={<FormCardapio />} />
 
-        <Route path='/HomeFuncionario/CadastrarCardapio/Jantar/' element={<EscolhaDiaJanta/>} />
-        <Route path='/HomeFuncionario/CadastrarCardapio/Jantar/:dia' element={<FormJanta/>} />
+          <Route path='/HomeFuncionario/CadastrarCardapio/Almoco/' element={<EscolhaDia />} />
+          <Route path='/HomeFuncionario/VisualizarFeedbacks/:tipo' element={<VisualizarFeedbacks />} />
+          <Route path='/HomeFuncionario/CadastrarCardapio/Almoco/:dia' element={<FormAlmoco />} />
 
-        <Route  path='/HomeFuncionario/EditarCardapio' element={<OpcoesEdicao/>} />
-        <Route  path='/HomeFuncionario/EditarCardapio/Almoco' element={<EscolhaDiaAlmoco/>} />
-        <Route  path='/HomeFuncionario/EditarCardapio/Almoco/:dia' element={<EditarAlmoco/>} />
-        <Route  path='/HomeFuncionario/EditarCardapio/Jantar' element={<EscolhaDiaJanta/>} />
-        <Route  path='/HomeFuncionario/EditarCardapio/Jantar/:dia' element={<EditarJanta/>} />
-        <Route path='/HomeFuncionario/VisualizarSugestoes' element={<Recomendacoes />} />
+          <Route path='/HomeFuncionario/CadastrarCardapio/Jantar/' element={<EscolhaDiaJanta />} />
+          <Route path='/HomeFuncionario/CadastrarCardapio/Jantar/:dia' element={<FormJanta />} />
+
+          <Route path='/HomeFuncionario/EditarCardapio' element={<OpcoesEdicao />} />
+          <Route path='/HomeFuncionario/EditarCardapio/Almoco' element={<EscolhaDiaAlmoco />} />
+          <Route path='/HomeFuncionario/EditarCardapio/Almoco/:dia' element={<EditarAlmoco />} />
+          <Route path='/HomeFuncionario/EditarCardapio/Jantar' element={<EscolhaDiaJanta />} />
+          <Route path='/HomeFuncionario/EditarCardapio/Jantar/:dia' element={<EditarJanta />} />
+          <Route path='/HomeFuncionario/VisualizarSugestoes' element={<Recomendacoes />} />
+        </Route>
+
 
       </Routes>
     </Router>

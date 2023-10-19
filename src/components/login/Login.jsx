@@ -6,7 +6,7 @@ import './Login.css'
 
 
 const Login = () => {
-
+    localStorage.clear();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [erro, setErro] = useState('')
@@ -24,9 +24,12 @@ const Login = () => {
             );
 
             if (usuario) {
+                const token = usuario.token;
                 if(usuario.aluno){
+                    localStorage.setItem('token', token);   
                     navigate('/homealuno')
                 }else{
+                    localStorage.setItem('token', token);
                     navigate('/homefuncionario')
                 }
                 

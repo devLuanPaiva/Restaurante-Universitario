@@ -1,20 +1,13 @@
 {
   "users": [
     {
-      "id": 1,
       "matricula": "2020022483",
-      "name_user": "Aluno Exemplo",
-      "email": "aluno@exemplo.com",
-      "password": "1",
-      "aluno": true
-    },
-    {
-      "id": 2,
-      "matricula": "20210134",
-      "name_user": "Funcionario Exemplo",
-      "email": "funcionario@exemplo.com",
-      "password": "1",
-      "aluno": false
+      "name_user": "AlunoTeste",
+      "email": "aluno@gmail.com",
+      "password": "a",
+      "aluno": true,
+      "token": "kIzz0Iw47rxUaQziXthW9yZZJ",
+      "id": 1
     }
   ],
   "cardapio_almoco": [
